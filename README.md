@@ -8,9 +8,9 @@ This code simulates a process from fictitious company ABC, from the definition o
 
 ## UML
 
-In this section, I will show some UML diagrams used for explaining to other people the sowftare elements for this excercise and also some sofwtare's behaviors. It is an excellent set of notation elements that describes from the business perspective how the software behaves, and drilling down to the classes & methods used in the code.
+In this section, I will show some UML diagrams used for explaining to other people the sowftare elements for this excercise and also some sofwtare's behaviors. It is an excellent set of notation elements that help us to model business processes and linking them to our software.
 
-In this excercise, I used Visual Paradigm Community Edition v16.1 as the tool for creating these diagrams.
+In this excercise, I used [Visual Paradigm](https://www.visual-paradigm.com/) Community Edition v16.1 as the tool for creating these diagrams.
 
 ###
 

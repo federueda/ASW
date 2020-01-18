@@ -12,6 +12,7 @@ In this section, I will show some UML diagrams used for explaining to other peop
 
 In this excercise, I used [Visual Paradigm](https://www.visual-paradigm.com/) Community Edition v16.1 as the tool for creating these diagrams.
 
+Inline-style: ![alt text](https://github.com/federueda/AWS/UML/Visual_Paradigm_UML_Screenshot.png "Logo Title Text 1")
 
 
 ###

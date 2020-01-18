@@ -1,6 +1,6 @@
-#Company ABC – Automating Selection Process for Quotations
+# Company ABC – Automating Selection Process for Quotations
 
-##Introduction
+## Introduction
 
 This is a simple code in python used to depict some concepts around the designing and coding of software.
 

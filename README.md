@@ -14,7 +14,7 @@ In this excercise, I used [Visual Paradigm](https://www.visual-paradigm.com/) Co
 
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/UML/VP_Screenshot.png" width="256" height="256" title="UML Diagrams in Visual Paradigm">
+<img src="https://github.com/federueda/ASW/blob/master/UML/VP_Screenshot.png" width="300" height="300" title="UML Diagrams in Visual Paradigm">
 </p>
 
 ###

@@ -50,9 +50,19 @@ Also this is a screenshot of a common SonarCloud dashboard:
 <img src="https://github.com/federueda/ASW/blob/master/Sonarcloud/SonarCloudDash.png" width="400" height="300" title="Activity Diagram">
 </p>
 
-
-
 ## 3. Clean Code Development (at least 5 points + 10 cheat sheet)
+
+For this excercise, I had been applying some best practices in terms of clean code development.
+
+- Boy Scout Rule: "*Leave the campground cleaner than you found it.*". Clean code developers leave code in a better state than they found it. So after work accomplished code shall apply more to CCD values than before. What exactly to be done is specific to situation and code – and of course to the grade currently worked on. A CCD in read grade would for an instance move code into version control, if it wasn’t yet in there. And he would focus on eliminating any kind of redundancies which are violations of the DRY principle.
+
+- Don’t Repeat Yourself (DRY): 
+
+- Version Control: Version control eliminates fear to do something wrong and break the system.
+
+- Single Responsibility Principle (SRP): Single Responsibility Principle (SRP) is one of the SOLID principles stating that a calls shall have only one responsibility.
+
+- Automatized Integration Tests: When we do code changes we shall be sure not to break anything. This security can be only achieved by testing if the application still behaves same as before.
 
 ## 4. Build Management
 
@@ -60,9 +70,9 @@ Also this is a screenshot of a common SonarCloud dashboard:
 
 ## 6. Continous Delivery (show pipeline in Travis-CI)
 
-## 7. IDE (favorite shortcuts)
+## 7. IDE
 
-The IDE used for this project is [Pycharm](https://www.jetbrains.com/pycharm/). This is a very famous IDE and supports lot of languages and has great features as smart code completition, error highlighting, etc.
+The IDE used for this project is [Pycharm](https://www.jetbrains.com/pycharm/). This is a very famous IDE and supports several programming languages and has great features as smart code completition, error highlighting, etc.
 
 Very useful shortcuts that I used for coding in Pycharm:
 

@@ -70,6 +70,13 @@ For this excercise, I had been applying some best practices in terms of clean co
 
 ## 6. Continous Delivery (show pipeline in Travis-CI)
 
+Python projects need to provide the script key in their .travis.yml to specify what command to run tests with.
+
+For example, if your project uses pytest:
+
+- command to run tests
+- script: pytest
+
 ## 7. IDE
 
 The IDE used for this project is [Pycharm](https://www.jetbrains.com/pycharm/). This is a very famous IDE and supports several programming languages and has great features as smart code completition, error highlighting, etc.

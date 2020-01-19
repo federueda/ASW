@@ -30,7 +30,7 @@ The following diagram models the business process and flow of different actions.
 
 ### Class Diagram
 
-The following UML diagram shows the classes and relationships between them.
+The following diagram shows some of the classes and relationships between them.
 
 <p align="center">
 <img src="https://github.com/federueda/ASW/blob/master/UML/Class.jpg" width="600" height="220" title="Class Diagram">

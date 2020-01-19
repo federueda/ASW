@@ -1,0 +1,6 @@
+Position,Valid_Key (if TRUE),Price_Points,Delivery_Time_Points(days),Quality_Certification(if TRUE),Local_Company(if TRUE)
+1,5,10,10,2,2
+2,5,7,7,2,2
+3,5,5,5,2,2
+4,5,3,3,2,2
+5,5,1,1,2,2

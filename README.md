@@ -12,9 +12,17 @@ In this section, I will show some UML diagrams used for explaining to other peop
 
 In this excercise, I used [Visual Paradigm](https://www.visual-paradigm.com/) Community Edition v16.1 as the tool for creating these diagrams.
 
+### Use Case Diagram
+
+The following diagram shows how different type of users interact with the software.
+
+<p align="center">
+<img src="https://github.com/federueda/ASW/blob/master/UML/Usecase.jpg" width="300" height="400" title="Use Case">
+</p>
+
 ### Activity Diagram
 
-The following diagram models the business process and main tasks to be performed by the software.
+The following diagram models the business process and flow of different actions.
 
 <p align="center">
 <img src="https://github.com/federueda/ASW/blob/master/UML/BPM.jpg" width="300" height="400" title="Activity Diagram">
@@ -25,7 +33,6 @@ The following diagram models the business process and main tasks to be performed
 The following UML diagram shows the classes and relationships between them.
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/UML/Class.jpg" width="256" height="256" title="Class Diagram">
+<img src="https://github.com/federueda/ASW/blob/master/UML/Class.jpg" width="600" height="220" title="Class Diagram">
 </p>
-
 

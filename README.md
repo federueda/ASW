@@ -44,6 +44,14 @@ In particular, it was a valuable tool for realizing some issues and points for i
 
 In the following [link](https://sonarcloud.io/dashboard?id=federueda_ASW) you can find the dashboard displaying several metrics for the code.
 
+Also this is a screenshot of a common SonarCloud dashboard:
+
+<p align="center">
+<img src="https://github.com/federueda/ASW/blob/master/Sonarcloud/SonarCloudDash.png" width="400" height="300" title="Activity Diagram">
+</p>
+
+
+
 ## 3. Clean Code Development (at least 5 points + 10 cheat sheet)
 
 ## 4. Build Management

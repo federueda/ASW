@@ -59,11 +59,11 @@ In the following [link](https://sonarcloud.io/dashboard?id=federueda_ASW) you ca
 ## 9. Functional Programming 
 
 Prove that you have covered the following:
- ..* only final data structures
- ..* side effects free functions
- ..* the use of higher order functions
- ..* functions as parameters and return values
- ..* use clojures / anonymous functions
+- Only final data structures
+- Side effects free functions
+- The use of higher order functions
+- Functions as parameters and return values
+- Use clojures / anonymous functions
 
 
 

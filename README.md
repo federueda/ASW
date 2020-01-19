@@ -54,6 +54,16 @@ In the following [link](https://sonarcloud.io/dashboard?id=federueda_ASW) you ca
 
 ## 7. IDE (favorite shortcuts)
 
+The IDE used for this project is [Pycharm](https://www.jetbrains.com/pycharm/). This is a very famous IDE and supports lot of languages and has great features as smart code completition, error highlighting, etc.
+
+Very useful shortcuts that I used for coding in Pycharm:
+
+- F2: Navigate between code issues
+- Shift + Enter: start new line after
+- Option + Command + Enter: start new line before (for Mac only)
+- Option + Shift + Up/Down: move selected code (similar to cut but without disappearing text)
+- Option + Command + L: reformat code, very useful to apply code styles quickly
+
 ## 8. Domain Specific Language (DSL) (create a small snippet, and apply functional programming)
 
 ## 9. Functional Programming 

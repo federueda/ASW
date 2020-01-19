@@ -1,4 +1,4 @@
-# Automating quotation's scoring for a purchase process in a company
+# Automating contracts Scoring for companies
 
 ## Introduction
 
@@ -36,3 +36,6 @@ The following diagram shows some of the classes and relationships between them.
 <img src="https://github.com/federueda/ASW/blob/master/UML/Class.jpg" width="600" height="220" title="Class Diagram">
 </p>
 
+## 2. Metrics
+
+For the metrics, I use [SonarCloud](https://sonarcloud.io/) and connect this tool with GitHub.

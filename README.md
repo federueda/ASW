@@ -17,7 +17,7 @@ In this excercise, I used [Visual Paradigm](https://www.visual-paradigm.com/) Co
 The following diagram shows how different type of users interact with the software.
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/UML/Usecase.jpg" width="300" height="400" title="Use Case">
+<img src="https://github.com/federueda/ASW/blob/master/UML/UseCase.jpg" width="300" height="400" title="Use Case">
 </p>
 
 ### Activity Diagram

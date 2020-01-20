@@ -5,80 +5,10 @@ import pandas as pd
 import numpy
 import os
 
-class Provider:
+from models import provider as provider_model
+from models import purchase_process as pp_model
+from models import quotation as quotation_model
 
- #"""Provider class will describe the objects of providers already registered
- #by the company in its system, through a read of a .CSV file. After reading
- #this file, the provider that is not in this list will not be recognized
- #as REGISTERED PROVIDER when scoring the quotations"""
-
-	def __init__(self,Provider_ID,Provider_Name,Provider_Address,Local_Company,Quality_Cert):
-		#se le adigna a cada atributo el respectivo valor por medio del paso de parametros
-		self.Provider_ID=Provider_ID
-		self.Provider_Name=Provider_Name
-		self.Provider_Address=Provider_Address
-		self.Local_Company=Local_Company
-		self.Quality_Cert=Quality_Cert
-
-	#If needed we can change name through a method
-	def Change_Name(self,name):
-		self.Provider_Name=name
-
-	#If needed in the process, there is a method provided for printing data
-	def Show_data(self):
-		print("Provider_ID "+str(self.Provider_ID))
-		print("Provider_Name "+str(self.Provider_Name))
-		print("Provider_Address "+str(self.Provider_Address))
-		print("Local_Company "+str(self.Local_Company))
-		print("Quality_Cert "+str(self.Quality_Cert))
-
-class Purchase_Process:
-
- #"""Purchase_Process class will describe the objects of items needed to buy for
- #the company (purchase process), that will be read from a .csv file with
- #information as ProcessID, ProdName, Qty, DelTime, Loc."""
-
-	def __init__(self,Purchase_Process,Product_Name,Quantity_Required):
-		self.Purchase_Process=Purchase_Process
-		self.Product_Name=Product_Name
-		self.Quantity_Required=Quantity_Required
-		#self.Delivery_Time_Required
-		#self.Location_Required
-
-	def Show_data(self):
-		print("Purchase_Process "+str(self.Purchase_Process))
-		print("Product_Name "+str(self.Product_Name))
-		print("Quantity_Required "+str(self.Quantity_Required))
-		#print(self.Delivery_Time_Required)
-		#print(self.Location_Required)
-
-class Quotation:
-
- #""""Quotation" class will describe the objects of quotations sent by providers
- #that could be registered (points) or not (no points),and will have all the
- #information needed to score the quotation and classify it by Purchase_Process_ID"""
-
-	def __init__(self,Provider_Code,Purchase_Process,Product_Name,Quantity,Unit_Price,Delivery_Time):
-		self.Provider_Code=Provider_Code
-		self.Purchase_Process=Purchase_Process
-		self.Product_Name=Product_Name
-		self.Quantity=Quantity
-		self.Unit_Price=Unit_Price
-		self.Delivery_Time=Delivery_Time
-		#self.Delivery_Location=Delivery_Location
-		self.Total_Points=0
-		self.Rank=0
-
-	def Show_data(self):
-		print("Provider_Code "+str(self.Provider_Code))
-		print("Purchase_Process "+str(self.Purchase_Process))
-		print("Product_Name "+str(self.Product_Name))
-		print("Quantity "+str(self.Quantity))
-		print("Unit_Price "+str(self.Unit_Price))
-		print("Delivery_Time "+str(self.Delivery_Time))
-		#print(self.Delivery_Location)
-		print("Total_Points "+str(self.Total_Points))
-		print("Rank "+str(self.Rank))
 
 def Price(pp,Quotations,Scoring):
 	dic={'ordered_list':[],'id_provider':[],'Purchase_P':[]}
@@ -399,7 +329,7 @@ while True:
 File=File.to_numpy()
 
 for x in range(0,File.shape[0]):
-	Providers.append(Provider(File[x][0],File[x][1],File[x][2],File[x][3],File[x][4]))
+	Providers.append(provider_model.Provider(File[x][0],File[x][1],File[x][2],File[x][3],File[x][4]))
 print("")	
 print("Great! "+str(File.shape[0])+" registers of providers were created")
 
@@ -436,7 +366,7 @@ while True:
 
 Purchase_Request=Purchase_Request.to_numpy()
 for x in range(0,Purchase_Request.shape[0]):
-	Purchase_Items.append(Purchase_Process(Purchase_Request[x][0],Purchase_Request[x][1],Purchase_Request[x][2]))
+	Purchase_Items.append(pp_model.Purchase_Process(Purchase_Request[x][0],Purchase_Request[x][1],Purchase_Request[x][2]))
 print("Great! "+str(Purchase_Request.shape[0])+" purchase processes were created")
 
 #"""STEP 4: Specify the path and read Quotations file into pandas and then numpy"""
@@ -455,7 +385,7 @@ while True:
 
 Quotation_file=Quotation_file.to_numpy()
 for x in range(0,Quotation_file.shape[0]):
-	Quotations.append(Quotation(Quotation_file[x][0],Quotation_file[x][1],Quotation_file[x][2],Quotation_file[x][3],Quotation_file[x][4],Quotation_file[x][5]))
+	Quotations.append(quotation_model.Quotation(Quotation_file[x][0],Quotation_file[x][1],Quotation_file[x][2],Quotation_file[x][3],Quotation_file[x][4],Quotation_file[x][5]))
 print("Great! "+str(Quotation_file.shape[0])+" quotations were uploaded to be scored")
 print("")
 

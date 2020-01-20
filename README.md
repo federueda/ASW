@@ -17,7 +17,7 @@ In this excercise, I used [Visual Paradigm](https://www.visual-paradigm.com/) Co
 The following diagram shows how different type of users interact with the software.
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/UML/UseCase.jpg" width="400" height="300" title="Use Case">
+<img src="./doc/UML/UseCase.jpg" width="400" height="300" title="Use Case">
 </p>
 
 ### Activity Diagram
@@ -25,7 +25,7 @@ The following diagram shows how different type of users interact with the softwa
 The following diagram models the business process and flow of different actions.
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/UML/BPM.jpg" width="300" height="400" title="Activity Diagram">
+<img src="./doc/UML/BPM.jpg" width="300" height="400" title="Activity Diagram">
 </p>
 
 ### Class Diagram
@@ -33,7 +33,7 @@ The following diagram models the business process and flow of different actions.
 The following diagram shows some of the classes and relationships between them.
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/UML/Class.jpg" width="600" height="220" title="Class Diagram">
+<img src="./doc/UML/Class.jpg" width="600" height="220" title="Class Diagram">
 </p>
 
 ## 2. Metrics
@@ -47,7 +47,7 @@ In the following [link](https://sonarcloud.io/dashboard?id=federueda_ASW) you ca
 Also this is a screenshot of a common SonarCloud dashboard:
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/Sonarcloud/SonarCloudDash.png" width="400" height="300" title="Activity Diagram">
+<img src="./doc/Sonarcloud/SonarCloudDash.png" width="400" height="300" title="Activity Diagram">
 </p>
 
 ## 3. Clean Code Development (at least 5 points + 10 cheat sheet)

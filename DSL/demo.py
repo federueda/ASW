@@ -29,18 +29,19 @@ class Coordinate(object):
 def command_validator(model, finish, player, stop, game, size):
 	for command in model.commands:
 		_cname = cname(command)
-		if _cname == 'Left' and (player.x - (1 if command.count == 0 else command.count) >= 0 ):
-			player.x = player.x - (1 if command.count == 0 else command.count)
-		elif _cname == 'Right' and (player.x + (1 if command.count == 0 else command.count)) <= size - 1:
-			player.x = player.x + (1 if command.count == 0 else command.count)
-		elif _cname == 'Up' and (player.y - (1 if command.count == 0 else command.count)) >= 0:
-			player.y = player.y - (1 if command.count == 0 else command.count)
-		elif _cname == 'Down' and (player.y + (1 if command.count == 0 else command.count)) <= size -1:
-			player.y = player.y + (1 if command.count == 0 else command.count)
+		delta = 1 if command.count == 0 else command.count
+		if _cname == 'Left' and player.x - delta >= 0 :
+			player.x = player.x - delta
+		elif _cname == 'Right' and player.x + delta <= size - 1:
+			player.x = player.x + delta
+		elif _cname == 'Up' and player.y - delta >= 0:
+			player.y = player.y - delta
+		elif _cname == 'Down' and player.y + delta <= size -1:
+			player.y = player.y + delta
 		else:
 			if command == 'reset':
 				game, finish, player = create_game(board_size)
-			else:
+			elif command == 'exit':
 				print("Exiting...")
 				stop = True
 				

@@ -31,14 +31,18 @@ def command_validator(model, finish, player, stop, game, size):
 		_cname = cname(command)
 		if _cname == 'Left' and (player.x - command.count) > 0:
 			player.x = player.x - (1 if command.count == 0 else command.count)
-		if _cname == 'Right' and (player.x + command.count) < size - 1:
+		elif _cname == 'Right' and (player.x + command.count) < size - 1:
 			player.x = player.x + (1 if command.count == 0 else command.count)
-		if _cname == 'Up' and (player.y - command.count) > 0:
+		elif _cname == 'Up' and (player.y - command.count) > 0:
 			player.y = player.y - (1 if command.count == 0 else command.count)
-		if _cname == 'Down' and (player.y + command.count) < size -1:
+		elif _cname == 'Down' and (player.y + command.count) < size -1:
 			player.y = player.y + (1 if command.count == 0 else command.count)
 	game = np.zeros((board_size, board_size))
 	game[player.y][player.x] = '1'
+	game[finish.y][finish.x] = '2'
+	if player.x == finish.x and player.y == finish.y:
+		stop = True
+		print("Victory!")
 	return finish, player, stop, game
 
 mm = metamodel_from_str(grammar)
@@ -51,6 +55,7 @@ finish = Coordinate(random.randint(0, board_size-1), random.randint(0, board_siz
 player = Coordinate(random.randint(0, board_size-1), random.randint(0, board_size-1))
 
 game[player.y][player.x] = '1'
+game[finish.y][finish.x] = '2'
 
 stop = False
 

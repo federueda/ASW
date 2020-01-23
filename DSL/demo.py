@@ -37,6 +37,13 @@ def command_validator(model, finish, player, stop, game, size):
 			player.y = player.y - (1 if command.count == 0 else command.count)
 		elif _cname == 'Down' and (player.y + (1 if command.count == 0 else command.count)) <= size -1:
 			player.y = player.y + (1 if command.count == 0 else command.count)
+		else:
+			if command == 'reset':
+				game, finish, player = create_game(board_size)
+			else:
+				print("Exiting...")
+				stop = True
+				
 	game = np.zeros((board_size, board_size))
 	game[player.y][player.x] = '1'
 	game[finish.y][finish.x] = '2'

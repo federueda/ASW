@@ -3,6 +3,10 @@ import numpy as np
 import random
 
 grammar = """
+Model: commands*=GameCommand;
+GameCommand: MoveCommand | ActionCommand;
+MoveCommand: Left | Right | Up | Down;
+ActionCommand: Reset | Exit;
 Left: 'left' count=INT?;
 Right: 'right' count=INT?;
 Up: 'up' count=INT?;
@@ -22,8 +26,10 @@ class Coordinate(object):
     def __str__(self):
         return "{},{}".format(self.x, self.y)
 
-def command_validator(command):
-    print(command.count)
+def command_validator(model, finish, player, stop, game):
+    for command in model.commands:
+        print(command)
+    return finish, player, stop, game
 
 mm = metamodel_from_str(grammar)
 
@@ -42,11 +48,8 @@ stop = False
 while not stop:
     print(game)
     print("\nMove single cell: '<left, right, up, down>'")
-    print("Move multiple cells: 'move to <left, right, up, down> XCELLS'")
+    print("Move multiple cells: '<left, right, up, down> XCELLS'")
     print("Reset game: 'reset'")
     print("Exit game: 'exit'")
     command = input('Enter command: ')
-    model_str = """
-    left
-    """
-    command_validator(mm.model_from_str(model_str))
+    finish, player, stop, game = command_validator(mm.model_from_str(command), finish, player, stop, game)

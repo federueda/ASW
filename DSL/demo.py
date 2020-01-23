@@ -29,13 +29,13 @@ class Coordinate(object):
 def command_validator(model, finish, player, stop, game, size):
 	for command in model.commands:
 		_cname = cname(command)
-		if _cname == 'Left' and (player.x - command.count) > 0:
+		if _cname == 'Left' and (player.x - (1 if command.count == 0 else command.count) >= 0 ):
 			player.x = player.x - (1 if command.count == 0 else command.count)
-		elif _cname == 'Right' and (player.x + command.count) < size - 1:
+		elif _cname == 'Right' and (player.x + (1 if command.count == 0 else command.count)) <= size - 1:
 			player.x = player.x + (1 if command.count == 0 else command.count)
-		elif _cname == 'Up' and (player.y - command.count) > 0:
+		elif _cname == 'Up' and (player.y - (1 if command.count == 0 else command.count)) >= 0:
 			player.y = player.y - (1 if command.count == 0 else command.count)
-		elif _cname == 'Down' and (player.y + command.count) < size -1:
+		elif _cname == 'Down' and (player.y + (1 if command.count == 0 else command.count)) <= size -1:
 			player.y = player.y + (1 if command.count == 0 else command.count)
 	game = np.zeros((board_size, board_size))
 	game[player.y][player.x] = '1'
@@ -45,17 +45,19 @@ def command_validator(model, finish, player, stop, game, size):
 		print("Victory!")
 	return finish, player, stop, game
 
+def create_game(board_size):
+	game = np.zeros((board_size, board_size))
+	finish = Coordinate(random.randint(0, board_size-1), random.randint(0, board_size-1))
+	player = Coordinate(random.randint(0, board_size-1), random.randint(0, board_size-1))
+	game[player.y][player.x] = '1'
+	game[finish.y][finish.x] = '2'
+	return game, finish, player
+
 mm = metamodel_from_str(grammar)
 
 board_size = 10
 
-game = np.zeros((board_size, board_size))
-
-finish = Coordinate(random.randint(0, board_size-1), random.randint(0, board_size-1))
-player = Coordinate(random.randint(0, board_size-1), random.randint(0, board_size-1))
-
-game[player.y][player.x] = '1'
-game[finish.y][finish.x] = '2'
+game, finish, player = create_game(board_size)
 
 stop = False
 

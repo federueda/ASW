@@ -25,7 +25,7 @@ The following diagram shows how different type of users interact with the softwa
 The following diagram models the business process and flow of different actions.
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/doc/uml/BPM.jpg" width="300" height="400" title="Activity Diagram">
+<img src="https://github.com/federueda/ASW/blob/master/doc/uml/BPM.jpg" width="300" height="400" title="BPM">
 </p>
 
 ### Class Diagram
@@ -47,7 +47,7 @@ In the following [link](https://sonarcloud.io/dashboard?id=federueda_ASW) you ca
 Also this is a screenshot of a common SonarCloud dashboard:
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/doc/sonarcloud/SonarCloudDash.png" width="400" height="300" title="Activity Diagram">
+<img src="https://github.com/federueda/ASW/blob/master/doc/sonarcloud/SonarCloudDash.png" width="400" height="300" title="SC">
 </p>
 
 ## 3. Clean Code Development (at least 5 points + 10 cheat sheet)
@@ -96,7 +96,7 @@ In this example, you will see a DSL designed to interact with a player for a lit
 To see the code please go to src folder and find [dsl-rev2.py](src/dsl_rev2.py) file. If you run it, then you find a small game where you need to move the "number 1" until arrive to the "number 2" position in the matrix, using commands as up, down, left or right. A screenshot is shown:
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/doc/dsl/dsl_matrix.png" width="500" height="300" title="Activity Diagram">
+<img src="https://github.com/federueda/ASW/blob/master/doc/dsl/dsl_matrix.png" width="500" height="300" title="DSL_Matrix">
 </p>
 
 
@@ -109,7 +109,7 @@ The main advantages of a DSL are:
 In the following diagram is possible to understand the basic DSL functionalities that interact between the player and the matrix through the command validator.
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/doc/dsl/DSL.jpg" width="500" height="300" title="Activity Diagram">
+<img src="https://github.com/federueda/ASW/blob/master/doc/dsl/DSL.jpg" width="500" height="300" title="DSL_Diagram">
 </p>
 
 ## 9. Functional Programming 

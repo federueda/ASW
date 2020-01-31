@@ -96,7 +96,7 @@ In this example, you will see a DSL designed to interact with a player for a lit
 To see the code please go to src folder and find [dsl-rev2.py](src/dsl_rev2.py) file. If you run it, then you find a small game where you need to move the "number 1" until arrive to the "number 2" position in the matrix, using commands as up, down, left or right. A screenshot is shown:
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/doc/dsl/dsl_matrix.png" width="500" height="300" title="DSL_Matrix">
+<img src="https://github.com/federueda/ASW/blob/master/doc/dsl/dsl_matrix1.png" width="500" height="300" title="DSL_Matrix">
 </p>
 
 

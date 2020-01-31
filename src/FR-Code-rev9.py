@@ -1,5 +1,4 @@
 #Import Libraries needed for managing the data
-#¿Why not split code into classes? and we can automate testing units
 
 import pandas as pd
 import numpy

@@ -99,7 +99,7 @@ The main advantages of a DSL are:
 - Easier to find issues or errors because of its limited scope
 - Higher expressiveness compared to general purpouse programming language
 
-In the following diagram is possible to understand the basic DSL functionalities that interacts between the player and the matrix thorugh the transformation engine.
+In the following diagram is possible to understand the basic DSL functionalities that interact between the player and the matrix through the command validator.
 
 <p align="center">
 <img src="https://github.com/federueda/ASW/blob/master/DSL/DSL_Diagram.jpg" width="500" height="300" title="Activity Diagram">

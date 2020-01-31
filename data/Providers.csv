@@ -1,0 +1,6 @@
+Provider_ID,Provider_Name,Provider_Address,Local_Company,Quality_Cert
+1111,ABC_Tech,Bogota,FALSE,TRUE
+2222,Tech&Sum,Barranquilla,TRUE,FALSE
+3333,Monitors&Accesories,Barranquilla,TRUE,FALSE
+4444,Computers&Computers,Barranquilla,TRUE,FALSE
+5555,CalTech,Cali,FALSE,TRUE

@@ -91,7 +91,7 @@ Very useful shortcuts that I used for coding in Pycharm:
 
 ## 8. Domain Specific Language (DSL) (create a small snippet, and apply functional programming)
 
-In this example, you will see a DSL designed to interact with a player for a little "matrix-type" game. The main idea is to use a language that could interact in a easy way, just entering "intuitive commands" in order to arrive from initial postion on the matrix to the desired destination in the matrix.
+In this example, you will see a DSL designed to interact with a player for a little "matrix-type" game. The main idea is to use a language that could interact in a easy way, just entering "intuitive commands" in order to arrive from initial postion on the matrix to the desired destination in the matrix. This is achieved through a transformation engine inside the General Purpose Programming Language, in this case Python.
 
 The main advantages of a DSL are:
 - It is a portable code that you could use inside several general-purpose languages
@@ -99,7 +99,7 @@ The main advantages of a DSL are:
 - Easier to find issues or errors because of its limited scope
 - Higher expressiveness compared to general purpouse programming language
 
-In the following diagram it is possible to understand the basic DSL functionalities that interacts between the player and the matrix thorugh the transformation engine.
+In the following diagram is possible to understand the basic DSL functionalities that interacts between the player and the matrix thorugh the transformation engine.
 
 <p align="center">
 <img src="https://github.com/federueda/ASW/blob/master/DSL/DSL.jpg" width="500" height="300" title="Activity Diagram">

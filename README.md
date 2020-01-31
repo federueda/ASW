@@ -89,7 +89,7 @@ Very useful shortcuts that I used for coding in Pycharm:
 - Option + Shift + Up/Down: move selected code (similar to cut but without disappearing text)
 - Option + Command + L: reformat code, very useful to apply code styles quickly
 
-## 8. Domain Specific Language (DSL) (create a small snippet, and apply functional programming)
+## 8. Domain Specific Language (DSL)
 
 In this example, you will see a DSL designed to interact with a player for a little "matrix-type" game. The main idea is to use a language that could interact in a easy way, just entering "intuitive commands" in order to arrive from initial postion on the matrix to the desired destination in the matrix. This is achieved through a transformation engine inside the General Purpose Programming Language, in this case Python.
 

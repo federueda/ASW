@@ -1,1 +1,0 @@
-In this folder are attached the .csv files realted with providers, purchase processes, quotations and the scoring policy

@@ -33,7 +33,7 @@ The following diagram models the business process and flow of different actions.
 The following diagram shows some of the classes and relationships between them.
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/doc/uml/Class.jpg" width="600" height="220" title="Class Diagram">
+<img src="https://github.com/federueda/ASW/blob/master/doc/uml/Class.jpg" width="480" height="180" title="Class Diagram">
 </p>
 
 ## 2. Metrics

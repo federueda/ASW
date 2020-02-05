@@ -122,7 +122,7 @@ In the reports directory you can find some reports each containing detailed info
 
 A second directory is the dist directory which contains the distribution. The distribution directory contains the same sources but in a Python-typical directory layout. You can also find the setup.py
 
-## 5. Testing integrated in the Build Management
+## 5. Testing integrated in Build Management
 
 PyBuilder is used to integrate the testing into the build management. Steps were explained in the section before, but details of configuration could be find in the [PyBuilder Tutorial](https://pybuilder.github.io/documentation/tutorial.html#.XjrZ-RNKj6C).
 

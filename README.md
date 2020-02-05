@@ -169,7 +169,7 @@ The main advantages of a DSL are:
 In the following diagram is possible to understand the basic DSL functionalities that interact between the player and the matrix through the command validator.
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/doc/dsl/DSL.jpg" width="400" height="380" title="DSL_Diagram">
+<img src="https://github.com/federueda/ASW/blob/master/doc/dsl/DSL.jpg" width="691" height="299" title="DSL_Diagram">
 </p>
 
 ## 9. Functional Programming 

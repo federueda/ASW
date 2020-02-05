@@ -106,7 +106,7 @@ For adding scripts you just put them in the directory src/main/scripts. You can 
 
 ### Step 4: Write Unit Tests
 
-For adding scripts you just put them in the directory src/unittest/python. You can chech the [contracts_tests.py](https://github.com/federueda/ASW/tree/master/src/unittest/python/contracts_tests.py) file. 
+For adding scripts you just put them in the directory src/unittest/python. You can check the [contracts_tests.py](https://github.com/federueda/ASW/tree/master/src/unittest/python/contracts_tests.py) file. 
 
 ### Step 5: Installing needed dependencies
 
@@ -123,6 +123,10 @@ In the reports directory you can find some reports each containing detailed info
 A second directory is the dist directory which contains the distribution. The distribution directory contains the same sources but in a Python-typical directory layout. You can also find the setup.py
 
 ## 5. Testing integrated in the Build Management
+
+PyBuilder is used to integrate the testing into the build management. Steps were explained in the section before, but details of configuration could be find in the [PyBuilder Tutorial](https://pybuilder.github.io/documentation/tutorial.html#.XjrZ-RNKj6C).
+
+You can check again the [contracts_tests.py](https://github.com/federueda/ASW/tree/master/src/unittest/python/contracts_tests.py) file.
 
 ## 6. Continous Delivery (show pipeline in Travis-CI)
 

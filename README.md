@@ -1,4 +1,5 @@
 # Smart scoring of contracts/quotations for companies
+## Advance Software Programming - Concepts
 
 ## Introduction
 
@@ -65,6 +66,25 @@ For this excercise, I had been applying some best practices in terms of clean co
 - Automatized Integration Tests: When we do code changes we shall be sure not to break anything. This security can be only achieved by testing if the application still behaves same as before.
 
 ## 4. Build Management
+
+...Explain Concept...
+
+For the build automation of this project, I used the PyBuilder that is a "software build tool written in pure Python which mainly targets Python applications. It is based on the concept of dependency based programming but also comes along with powerful plugin mechanism that allows the construction of build life cycles similar to those known from other famous build tools like Apache Maven" (extracted from [Pybuilder homepage](https://pybuilder.github.io/)). 
+
+<p align="center">
+<img src="https://github.com/federueda/ASW/blob/master/doc/build/pybuilder_intro.png" width="1024" height="150" title="DSL_Matrix">
+</p>
+
+The python version supported by this tool is Python 3.6.10, so it is installed and used with virtualenv, checked that was sucessfully created the venv and activate it.
+
+$ pyenv virtualenv 3.6.10 <name-to-give-it>\
+$ pyenv virtualenvs\
+$ pyenv activate <name>\
+$ pyenv deactivate\
+  
+
+
+
 
 ## 5. Testing integrated in the Build Management
 

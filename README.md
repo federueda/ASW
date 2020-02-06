@@ -180,17 +180,16 @@ Prove that you have covered the following:
 
 Variables are Immutable. The immutable nature of variables in a functional programming language benefits in the form of preserving the state throughout the execution of a program. See example in the [code](/master/src/dsl_rev2.py#L7).
 
-- Side effects free functions:OK
+- Side effects free functions:
 
-Pure functions have two important properties, they: Always produce the same output with the same arguments disregard of other factors. This property is also known as immutability AND Are deterministic. Pure functions either give some output or modify any argument or global variables i.e. they have no side-effects. Because pure functions have no side-effects or hidden I/O, programs built using functional programming are easy to debug. Moreover, pure functions make writing concurrent applications easier.
+Pure functions always produce the same output with the same arguments disregard of other factors and they are also deterministic. You can see a side effects free functions example in the [code](/master/src/dsl_rev2.py#L72).
 
 - The use of higher order functions:
 
-Functions in the functional programming style are treated as variables. Hence, they are first-class functions. These first-class functions are allowed to be passed to other functions as parameters or returned from functions or stored in data structures. A higher-order function is a function that takes other functions as arguments and/or returns functions. First-Class functions can be higher-order functions in functional programming languages.
+Functions in the functional programming style are treated as variables. These first-class functions are allowed to be passed to other functions as parameters or returned from functions or stored in data structures. A higher-order function is a function that takes other functions as arguments and/or returns functions. You can see an example in the [code](/master/src/dsl_rev2.py#L86).
 
-- Functions as parameters and return values: Averiguar en Material
+- Use clojures / anonymous functions: 
 
-- Use clojures / anonymous functions: lmba buscar referencia
+They are not defined as standard function, is not bound to an identifier and they are used once. You can see an example in the [code](/master/src/dsl_rev2.py#L34).
 
-Pointer:
-.py#L20
+- Functions as parameters and return values: You can see an example in the [code](/master/src/dsl_rev2.py#L66).

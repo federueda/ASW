@@ -2,6 +2,8 @@ from textx import metamodel_from_str, get_children_of_type
 import numpy as np
 import random
 
+# final data structures, a purely functional data structure is immutable as is thi variable "grammar"
+
 grammar = """
 Model: commands*=GameCommand;
 GameCommand: MoveCommand | ActionCommand;
@@ -13,7 +15,7 @@ Up: 'up' count=INT?;
 Down: 'down' count=INT?;
 Reset: 'reset';
 Exit: 'exit';
-"""   # 1. Only final data structures, a purely functional data structure is immutable
+"""   
 
 def cname(o):
 	return o.__class__.__name__
@@ -29,7 +31,7 @@ class Coordinate(object):
 def command_validator(model, finish, player, stop, game, size):
 	for command in model.commands:
 		_cname = cname(command)
-		delta = 1 if command.count == 0 else command.count # Funciones Anonimas: funciones que no se definen, no la asignas a una variable, como lambda, no se construyen de manera standard
+		delta = 1 if command.count == 0 else command.count  # anonymous function
 		if _cname == 'Left' and player.x - delta >= 0 :
 			player.x = player.x - delta
 		elif _cname == 'Right' and player.x + delta <= size - 1:
@@ -65,8 +67,7 @@ mm = metamodel_from_str(grammar)
 
 board_size = 10
 
-# Side effects free functions: this is a pure function, the variables games, finish, player are mutable but not
-# outside their context???
+# Side effects free functions: create_game is a pure function, the variables games, finish, player are inmutable
 
 game, finish, player = create_game(board_size) 
 
@@ -80,7 +81,7 @@ while not stop:
 	print("Exit game: 'exit'")
 	command = input('Enter command: ')
 	
-	# Functions as parameters and return values (F(G(x))) ???
+# Higher order functions: command validator function receives a value from metamodel_from_str function
 	
 	finish, player, stop, game = command_validator(mm.model_from_str(command), finish, player, stop, game, board_size)
 

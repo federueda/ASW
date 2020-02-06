@@ -7,3 +7,4 @@ install:
   
 script:
   - python -m unittest
+  - python setup.py build_sphinx

@@ -175,11 +175,22 @@ In the following diagram is possible to understand the basic DSL functionalities
 ## 9. Functional Programming 
 
 Prove that you have covered the following:
-- Only final data structures
-- Side effects free functions
-- The use of higher order functions
-- Functions as parameters and return values
-- Use clojures / anonymous functions
+
+- Only final data structures: 
+
+Variables are Immutable. In functional programming, variables are immutable i.e. it isn’t possible to modify a variable once it has been initialized. Though we can create a new variable, modifying existing variables is not allowed. The immutable nature of variables in a functional programming language benefits in the form of preserving the state throughout the execution of a program.
+
+- Side effects free functions:OK
+
+Pure functions have two important properties, they: Always produce the same output with the same arguments disregard of other factors. This property is also known as immutability AND Are deterministic. Pure functions either give some output or modify any argument or global variables i.e. they have no side-effects. Because pure functions have no side-effects or hidden I/O, programs built using functional programming are easy to debug. Moreover, pure functions make writing concurrent applications easier.
+
+- The use of higher order functions:
+
+Functions in the functional programming style are treated as variables. Hence, they are first-class functions. These first-class functions are allowed to be passed to other functions as parameters or returned from functions or stored in data structures. A higher-order function is a function that takes other functions as arguments and/or returns functions. First-Class functions can be higher-order functions in functional programming languages.
+
+- Functions as parameters and return values: Averiguar en Material
+
+- Use clojures / anonymous functions: lmba buscar referencia
 
 Pointer:
 .py#L20

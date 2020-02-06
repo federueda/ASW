@@ -13,7 +13,8 @@ Up: 'up' count=INT?;
 Down: 'down' count=INT?;
 Reset: 'reset';
 Exit: 'exit';
-"""
+"""   # Only final data structures, a purely functional data structure is immutable
+#COMO TAL EN PYTHON NO SE PUEDEN CREAR CONSTANTES DE FORMA NATIVA(SIN LIBRERIA) PERO ESTA VARIABLE ES UNA CONSTANTE EN FORMA LOGICA, ES INMUTABLE
 
 def cname(o):
 	return o.__class__.__name__
@@ -29,7 +30,7 @@ class Coordinate(object):
 def command_validator(model, finish, player, stop, game, size):
 	for command in model.commands:
 		_cname = cname(command)
-		delta = 1 if command.count == 0 else command.count
+		delta = 1 if command.count == 0 else command.count # ESTO ES OTRO CONCEPTO YA QUE DELEGA EL FLUJO O CONDICIONES A UNA FUNCION... ESTA LINEA ES UNA FUNCION
 		if _cname == 'Left' and player.x - delta >= 0 :
 			player.x = player.x - delta
 		elif _cname == 'Right' and player.x + delta <= size - 1:
@@ -65,7 +66,10 @@ mm = metamodel_from_str(grammar)
 
 board_size = 10
 
-game, finish, player = create_game(board_size)
+# Side effects free functions: this is a pure function, the variables games, finis, player are mutable but not
+# outside their context???
+
+game, finish, player = create_game(board_size) 
 
 stop = False
 
@@ -76,4 +80,8 @@ while not stop:
 	print("Reset game: 'reset'")
 	print("Exit game: 'exit'")
 	command = input('Enter command: ')
+	
+	# Functions as parameters and return values (F(G(x))) ???
+	
 	finish, player, stop, game = command_validator(mm.model_from_str(command), finish, player, stop, game, board_size)
+

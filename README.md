@@ -178,18 +178,18 @@ Prove that you have covered the following:
 
 - Only final data structures: 
 
-Variables are Immutable. The immutable nature of variables in a functional programming language benefits in the form of preserving the state throughout the execution of a program. See example in the [code](/master/src/dsl_rev2.py#L7).
+Variables are Immutable. The immutable nature of variables in a functional programming language benefits in the form of preserving the state throughout the execution of a program. See example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L7).
 
 - Side effects free functions:
 
-Pure functions always produce the same output with the same arguments disregard of other factors and they are also deterministic. You can see a side effects free functions example in the [code](/master/src/dsl_rev2.py#L72).
+Pure functions always produce the same output with the same arguments disregard of other factors and they are also deterministic. You can see a side effects free functions example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L72).
 
 - The use of higher order functions:
 
-Functions in the functional programming style are treated as variables. These first-class functions are allowed to be passed to other functions as parameters or returned from functions or stored in data structures. A higher-order function is a function that takes other functions as arguments and/or returns functions. You can see an example in the [code](/master/src/dsl_rev2.py#L86).
+Functions in the functional programming style are treated as variables. These first-class functions are allowed to be passed to other functions as parameters or returned from functions or stored in data structures. A higher-order function is a function that takes other functions as arguments and/or returns functions. You can see an example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L86).
 
 - Use clojures / anonymous functions: 
 
-They are not defined as standard function, is not bound to an identifier and they are used once. You can see an example in the [code](/master/src/dsl_rev2.py#L34).
+They are not defined as standard function, is not bound to an identifier and they are used once. You can see an example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L34).
 
-- Functions as parameters and return values: You can see an example in the [code](/master/src/dsl_rev2.py#L66).
+- Functions as parameters and return values: You can see an example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L66).

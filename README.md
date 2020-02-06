@@ -178,7 +178,7 @@ Prove that you have covered the following:
 
 - Only final data structures: 
 
-Variables are Immutable. In functional programming, variables are immutable i.e. it isn’t possible to modify a variable once it has been initialized. Though we can create a new variable, modifying existing variables is not allowed. The immutable nature of variables in a functional programming language benefits in the form of preserving the state throughout the execution of a program.
+Variables are Immutable. The immutable nature of variables in a functional programming language benefits in the form of preserving the state throughout the execution of a program. See example in the [code](/master/src/dsl_rev2.py#L7).
 
 - Side effects free functions:OK
 

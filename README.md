@@ -190,6 +190,6 @@ Functions in the functional programming style are treated as variables. These fi
 
 - Use clojures / anonymous functions: 
 
-They are not defined as standard function, is not bound to an identifier and they are used once. You can see an example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L34).
+Anonymous functions are not defined as standard functions, is not bound to an identifier and they are used once. You can see an example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L34).
 
 - Functions as parameters and return values: You can see an example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L66).

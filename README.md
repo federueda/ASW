@@ -53,7 +53,7 @@ Also this is a screenshot of a common SonarCloud dashboard:
 
 ## 3. Clean Code Development (at least 5 points + 10 cheat sheet)
 
-For this excercise, I had been applying some best practices in terms of clean code development.
+The following are examples of best practices applied in the project from the [clean code cheat sheet](https://github.com/federueda/ASW/blob/master/doc/cleancode/cheatsheet.pdf):
 
 - Boy Scout Rule: "*Leave the campground cleaner than you found it.*". Clean code developers leave code in a better state than they found it. So after work accomplished code shall apply more to CCD values than before. What exactly to be done is specific to situation and code – and of course to the grade currently worked on. A CCD in read grade would for an instance move code into version control, if it wasn’t yet in there. And he would focus on eliminating any kind of redundancies which are violations of the DRY principle.
 

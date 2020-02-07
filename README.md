@@ -55,41 +55,36 @@ Also this is a screenshot of a common SonarCloud dashboard:
 
 ### CCD Principles:
 
-- **Don’t Repeat Yourself (DRY):** I tried to avoid the copy and paste practice and instead encapsulate this repeated code for example in functions. You can check the examples in the code (here)[].
+- **Don’t Repeat Yourself (DRY):** Try to avoid the copy and paste practice and instead encapsulate this repeated code for example in functions. You can check the examples in the code [here](https://github.com/federueda/ASW/blob/master/src/models/provider.py#L1).
+- **Automated Unit Tests:** Automation simply saves time. And the more complex the code, the greater the reduction in fear. You can check automated unit tests [here](https://github.com/federueda/ASW/tree/master/src/unittest).
+- **Code Coverage Analysis:** it is automated inside the pybuilder (builder automation) process using Python-Coverage plugin. You can check the code and plugin inside the [build.py](https://github.com/federueda/ASW/blob/master/build.py) file. The following is the result of the test coverage:
 
-- **Automated Unit Tests:** The more a codebase is subject to change, the more time is saved. Where code changes, new and old (regression tests) have to be tested again and again. Automation simply saves time. And the more complex the code, the greater the reduction in fear. If complex code needs to be changed - to add functionality, optimize it or simply correct it - there is a high risk of inadvertent errors being introduced. However, small steps of automated tests reveal these, so there is no reason to be afraid of "making things worse".
+<p align="center">
+<img src="https://github.com/federueda/ASW/blob/master/doc/sonarcloud/AAA.png" width="400" height="300" title="SC">
+</p>
 
-- **Code Coverage Analysis:** Code Coverage is the test coverage through test cases. Code Coverage also shows the untested code points. In practice, a test coverage of 80% is a desirable goal. A high test coverage has become an important marketing tool and plays an important role in awarding and acceptance of orders. There are excellent (also free tools) that can automate the process of code coverage analysis and perform it quite comprehensively.
+- **Continuous Integration:** for this project is used the Travis-CI tool (see [CI](https://github.com/federueda/ASW/blob/master/README.md#L159)).
+- **Version Control:** for this project is used the Git tool **whtat link to includes**.
 
-- **Continuous Integration / Delivery (grün / blau):** Have a continous Integration+Delivery System
+- **Use a Buildmanagement Tool:** nowadays, documentation generation, testing, creating the binaries, etc. cannot be done manually. It is used pybuilder tool for performing these actions. You can check the build folder, and the following is a view from the build process.
 
-- **Version Control:** Version control eliminates fear to do something wrong and break the system
-
-- **Use a Buildmanagement Tool:** Research and industry today agree that building management is necessary from just a few classes if a serious program is to be created and more than one developer is working on it. Documentation generation, testing, creating the binaries, etc. cannot be done manually any more and can no longer be done consistently in the IDE after two developers.
+<p align="center">
+<img src="https://github.com/federueda/ASW/blob/master/doc/sonarcloud/AAA.png" width="400" height="300" title="SC">
+</p>
 
 ### Clean Code Cheat Sheet:
 
-Now, the following are examples of best practices applied in the project from the [clean code cheat sheet](https://github.com/federueda/ASW/blob/master/doc/cleancode/cheatsheet.pdf):
+Now, the following are examples of best practices applied to the project from the [clean code cheat sheet](https://github.com/federueda/ASW/blob/master/doc/cleancode/cheatsheet.pdf):
 
-- **Boy Scout Rule:** "*Leave the campground cleaner than you found it.*". Clean code developers leave code in a better state than they found it. So after work accomplished code shall apply more to CCD values than before. What exactly to be done is specific to situation and code – and of course to the grade currently worked on. A CCD in read grade would for an instance move code into version control, if it wasn’t yet in there. And he would focus on eliminating any kind of redundancies which are violations of the DRY principle.
-
-- **Multiple Languages in One Source File:** C#, Java, JavaScript, XML, HTML, XAML, English, German ...
-
-- **Project Build Requires Only One Step:** Check out and then build with a single command
-
-- **Executing tests requires only one step:** Run all unit tests with a single command.
-
-- **Dead Comment, Code:** Delete unused things. You can find them in your version control system.
-
-- **Poorly Written Comment:** Comment does not add any value (redundant to code), is not well formed, not correct grammar/spelling.
-
-- **Single Responsibility Principle (SRP):** Single Responsibility Principle (SRP) is one of the SOLID principles stating that a calls shall have only one responsibility.
-
-- **Automatized Integration Tests:** When we do code changes we shall be sure not to break anything. This security can be only achieved by testing if the application still behaves same as before.
-
+- **Boy Scout Rule:** leave the campground cleaner than you found it.
+- **Don´t manage multiple languages in one source file:** see Python file [here](https://github.com/federueda/ASW/blob/master/src/contracts.py).
+- **Project Build Requires Only One Step:** Check out and then build with a single command, in this case pyb command from pybuilder, check the [build.py](https://github.com/federueda/ASW/blob/master/build.py).
+- **Executing tests requires only one step:** Run all unit tests with a single command, in this case using the [unittest](https://github.com/federueda/ASW/tree/master/src/unittest) plugin in pybuilder.
+- **Dead Comment, Code:** delete unused things.
+- **Poorly Written Comment:** comment does not add any value (redundant to code), is not well formed, not correct grammar/spelling.
+- **Single Responsibility Principle (SRP):** single Responsibility Principle (SRP) is one of the SOLID principles stating that a calls shall have only one responsibility.
 - **Understand the Algorithm:** Just working is not enough, make sure you understand why it works.
-
-- **Test Method Naming:** Names reflect what is tested, e.g. FeatureWhenScenarioThenBehaviour.
+- **Test Method Naming:** Names reflect what is tested, an example in the [code](https://github.com/federueda/ASW/blob/master/src/contracts.py#L304)
 
 ## 4. Build Management
 

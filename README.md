@@ -63,7 +63,7 @@ Also this is a screenshot of a common SonarCloud dashboard:
 
 - **Continuous Integration / Delivery (grün / blau):** Have a continous Integration+Delivery System
 
-- **Use a Version Control System:** Text will follow...
+- **Version Control:** Version control eliminates fear to do something wrong and break the system
 
 - **Use a Buildmanagement Tool:** Research and industry today agree that building management is necessary from just a few classes if a serious program is to be created and more than one developer is working on it. Documentation generation, testing, creating the binaries, etc. cannot be done manually any more and can no longer be done consistently in the IDE after two developers.
 
@@ -71,13 +71,25 @@ Also this is a screenshot of a common SonarCloud dashboard:
 
 Now, the following are examples of best practices applied in the project from the [clean code cheat sheet](https://github.com/federueda/ASW/blob/master/doc/cleancode/cheatsheet.pdf):
 
-- Boy Scout Rule: "*Leave the campground cleaner than you found it.*". Clean code developers leave code in a better state than they found it. So after work accomplished code shall apply more to CCD values than before. What exactly to be done is specific to situation and code – and of course to the grade currently worked on. A CCD in read grade would for an instance move code into version control, if it wasn’t yet in there. And he would focus on eliminating any kind of redundancies which are violations of the DRY principle.
+- **Boy Scout Rule:** "*Leave the campground cleaner than you found it.*". Clean code developers leave code in a better state than they found it. So after work accomplished code shall apply more to CCD values than before. What exactly to be done is specific to situation and code – and of course to the grade currently worked on. A CCD in read grade would for an instance move code into version control, if it wasn’t yet in there. And he would focus on eliminating any kind of redundancies which are violations of the DRY principle.
 
-- Version Control: Version control eliminates fear to do something wrong and break the system.
+- **Multiple Languages in One Source File:** C#, Java, JavaScript, XML, HTML, XAML, English, German ...
 
-- Single Responsibility Principle (SRP): Single Responsibility Principle (SRP) is one of the SOLID principles stating that a calls shall have only one responsibility.
+- **Project Build Requires Only One Step:** Check out and then build with a single command
 
-- Automatized Integration Tests: When we do code changes we shall be sure not to break anything. This security can be only achieved by testing if the application still behaves same as before.
+- **Executing tests requires only one step:** Run all unit tests with a single command.
+
+- **Dead Comment, Code:** Delete unused things. You can find them in your version control system.
+
+- **Poorly Written Comment:** Comment does not add any value (redundant to code), is not well formed, not correct grammar/spelling.
+
+- **Single Responsibility Principle (SRP):** Single Responsibility Principle (SRP) is one of the SOLID principles stating that a calls shall have only one responsibility.
+
+- **Automatized Integration Tests:** When we do code changes we shall be sure not to break anything. This security can be only achieved by testing if the application still behaves same as before.
+
+- **Understand the Algorithm:** Just working is not enough, make sure you understand why it works.
+
+- **Test Method Naming:** Names reflect what is tested, e.g. FeatureWhenScenarioThenBehaviour.
 
 ## 4. Build Management
 

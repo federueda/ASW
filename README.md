@@ -13,7 +13,7 @@ In this section, I will show some UML diagrams used for explaining to other peop
 
 In this excercise, I used [Visual Paradigm](https://www.visual-paradigm.com/) Community Edition v16.1 as the tool for creating these diagrams.
 
-### Use Case Diagram
+### 1.1 Use Case Diagram
 
 The following diagram shows how different type of users interact with the software.
 
@@ -21,7 +21,7 @@ The following diagram shows how different type of users interact with the softwa
 <img src="https://github.com/federueda/ASW/blob/master/doc/uml/UseCase.jpg" width="400" height="300" title="Use Case">
 </p>
 
-### Activity Diagram
+### 1.2 Activity Diagram
 
 The following diagram models the business process and flow of different actions.
 
@@ -29,7 +29,7 @@ The following diagram models the business process and flow of different actions.
 <img src="https://github.com/federueda/ASW/blob/master/doc/uml/BPM.jpg" width="300" height="400" title="BPM">
 </p>
 
-### Class Diagram
+### 1.3 Class Diagram
 
 The following diagram shows some of the classes and relationships between them.
 
@@ -45,7 +45,7 @@ In particular, it was a valuable tool for realizing some issues and points for i
 
 In the following [link](https://sonarcloud.io/dashboard?id=federueda_ASW) you can find the dashboard displaying several metrics for the code.
 
-Also this is a screenshot of a common SonarCloud dashboard:
+Also this is a view of a common SonarCloud dashboard:
 
 <p align="center">
 <img src="https://github.com/federueda/ASW/blob/master/doc/sonarcloud/SonarCloudDash.png" width="400" height="300" title="SC">
@@ -53,38 +53,38 @@ Also this is a screenshot of a common SonarCloud dashboard:
 
 ## 3. Clean Code Development (at least 5 points + 10 cheat sheet)
 
-### CCD Principles:
+### 3.1 CCD Principles:
 
-- **Don’t Repeat Yourself (DRY):** Try to avoid the copy and paste practice and instead encapsulate this repeated code for example in functions. You can check the examples in the code [here](https://github.com/federueda/ASW/blob/master/src/models/provider.py#L1).
-- **Automated Unit Tests:** Automation simply saves time. And the more complex the code, the greater the reduction in fear. You can check automated unit tests [here](https://github.com/federueda/ASW/tree/master/src/unittest).
-- **Code Coverage Analysis:** it is automated inside the pybuilder (builder automation) process using Python-Coverage plugin. You can check the code and plugin inside the [build.py](https://github.com/federueda/ASW/blob/master/build.py) file. The following is the result of the test coverage:
+- **3.1.1 Don’t Repeat Yourself (DRY):** Try to avoid the copy and paste practice and instead encapsulate this repeated code for example in functions. You can check the examples in the code [here](https://github.com/federueda/ASW/blob/master/src/models/provider.py#L1).
+- **3.1.2 Automated Unit Tests:** Automation simply saves time. And the more complex the code, the greater the reduction in fear. You can check automated unit tests [here](https://github.com/federueda/ASW/tree/master/src/unittest).
+- **3.1.3 Code Coverage Analysis:** it is automated inside the pybuilder (builder automation) process using Python-Coverage plugin. You can check the code and plugin inside the [build.py](https://github.com/federueda/ASW/blob/master/build.py) file. The following is the result of the test coverage:
 
 <p align="center">
 <img src="https://github.com/federueda/ASW/blob/master/doc/sonarcloud/AAA.png" width="400" height="300" title="SC">
 </p>
 
-- **Continuous Integration:** for this project is used the Travis-CI tool (see [CI](https://github.com/federueda/ASW/blob/master/README.md#L159)).
+- **3.1.4 Continuous Integration:** for this project is used the Travis-CI tool (see [CI](https://github.com/federueda/ASW/blob/master/README.md#L159)).
 - **Version Control:** for this project is used the Git tool **whtat link to includes**.
 
-- **Use a Buildmanagement Tool:** nowadays, documentation generation, testing, creating the binaries, etc. cannot be done manually. It is used pybuilder tool for performing these actions. You can check the build folder, and the following is a view from the build process.
+- **3.1.5 Use a Buildmanagement Tool:** nowadays, documentation generation, testing, creating the binaries, etc. cannot be done manually. It is used pybuilder tool for performing these actions. You can check the build folder, and the following is a view from the build process.
 
 <p align="center">
 <img src="https://github.com/federueda/ASW/blob/master/doc/sonarcloud/AAA.png" width="400" height="300" title="SC">
 </p>
 
-### Clean Code Cheat Sheet:
+### 3.2 Clean Code Cheat Sheet:
 
 Now, the following are examples of best practices applied to the project from the [clean code cheat sheet](https://github.com/federueda/ASW/blob/master/doc/cleancode/cheatsheet.pdf):
 
-- **Boy Scout Rule:** leave the campground cleaner than you found it.
-- **Don´t manage multiple languages in one source file:** see Python file [here](https://github.com/federueda/ASW/blob/master/src/contracts.py).
-- **Project Build Requires Only One Step:** Check out and then build with a single command, in this case pyb command from pybuilder, check the [build.py](https://github.com/federueda/ASW/blob/master/build.py).
-- **Executing tests requires only one step:** Run all unit tests with a single command, in this case using the [unittest](https://github.com/federueda/ASW/tree/master/src/unittest) plugin in pybuilder.
-- **Dead Comment, Code:** delete unused things.
-- **Poorly Written Comment:** comment does not add any value (redundant to code), is not well formed, not correct grammar/spelling.
-- **Single Responsibility Principle (SRP):** single Responsibility Principle (SRP) is one of the SOLID principles stating that a calls shall have only one responsibility.
-- **Understand the Algorithm:** Just working is not enough, make sure you understand why it works.
-- **Test Method Naming:** Names reflect what is tested, an example in the [code](https://github.com/federueda/ASW/blob/master/src/contracts.py#L304)
+- **3.2.1 Boy Scout Rule:** leave the campground cleaner than you found it.
+- **3.2.2 Don´t manage multiple languages in one source file:** see Python file [here](https://github.com/federueda/ASW/blob/master/src/contracts.py).
+- **3.2.3 Project Build Requires Only One Step:** Check out and then build with a single command, in this case pyb command from pybuilder, check the [build.py](https://github.com/federueda/ASW/blob/master/build.py).
+- **3.2.4 Executing tests requires only one step:** Run all unit tests with a single command, in this case using the [unittest](https://github.com/federueda/ASW/tree/master/src/unittest) plugin in pybuilder.
+- **3.2.5 Dead Comment, Code:** delete unused things.
+- **3.2.6 Poorly Written Comment:** comment does not add any value (redundant to code), is not well formed, not correct grammar/spelling.
+- **3.2.7 Single Responsibility Principle (SRP):** single Responsibility Principle (SRP) is one of the SOLID principles stating that a calls shall have only one responsibility.
+- **3.2.8 Understand the Algorithm:** Just working is not enough, make sure you understand why it works.
+- **3.2.9 Test Method Naming:** Names reflect what is tested, an example in the [code](https://github.com/federueda/ASW/blob/master/src/contracts.py#L304)
 
 ## 4. Build Management
 
@@ -197,12 +197,12 @@ In the following diagram is possible to understand the basic DSL functionalities
 
 Prove that you have covered the following:
 
-- **Only final data structures:** variables are Immutable. The immutable nature of variables in a functional programming language benefits in the form of preserving the state throughout the execution of a program. See example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L7).
+- **9.1 Only final data structures:** variables are Immutable. The immutable nature of variables in a functional programming language benefits in the form of preserving the state throughout the execution of a program. See example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L7).
 
-- **Side effects free functions:** pure functions always produce the same output with the same arguments disregard of other factors and they are also deterministic. You can see a side effects free functions example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L72).
+- **9.2 Side effects free functions:** pure functions always produce the same output with the same arguments disregard of other factors and they are also deterministic. You can see a side effects free functions example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L72).
 
-- **The use of higher order functions:** functions in the functional programming style are treated as variables. These first-class functions are allowed to be passed to other functions as parameters or returned from functions or stored in data structures. A higher-order function is a function that takes other functions as arguments and/or returns functions. You can see an example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L86).
+- **9.3 The use of higher order functions:** functions in the functional programming style are treated as variables. These first-class functions are allowed to be passed to other functions as parameters or returned from functions or stored in data structures. A higher-order function is a function that takes other functions as arguments and/or returns functions. You can see an example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L86).
 
-- **Use clojures / anonymous functions:** anonymous functions are not defined as standard functions, is not bound to an identifier and they are used once. You can see an example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L34).
+- **9.4 Use clojures / anonymous functions:** anonymous functions are not defined as standard functions, is not bound to an identifier and they are used once. You can see an example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L34).
 
-- **Functions as parameters and return values:** You can see an example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L66).
+- **9.5 Functions as parameters and return values:** You can see an example in the [code](https://github.com/federueda/ASW/blob/master/src/dsl.py#L66).

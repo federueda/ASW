@@ -53,11 +53,17 @@ Also this is a screenshot of a common SonarCloud dashboard:
 
 ## 3. Clean Code Development (at least 5 points + 10 cheat sheet)
 
+- **Don’t Repeat Yourself (DRY):** I tried to avoid the copy and paste practice and instead encapsulate this repeated code for example in functions. You can check the examples in the code (here)[].
+
+- **Automated Unit Tests:** The more a codebase is subject to change, the more time is saved. Where code changes, new and old (regression tests) have to be tested again and again. Automation simply saves time. And the more complex the code, the greater the reduction in fear. If complex code needs to be changed - to add functionality, optimize it or simply correct it - there is a high risk of inadvertent errors being introduced. However, small steps of automated tests reveal these, so there is no reason to be afraid of "making things worse".
+
+- **Continuous Integration / Delivery (grün / blau):** Have a continous Integration+Delivery System
+
+- **Code Coverage Analysis:** Code Coverage is the test coverage through test cases. Code Coverage also shows the untested code points. In practice, a test coverage of 80% is a desirable goal. A high test coverage has become an important marketing tool and plays an important role in awarding and acceptance of orders. There are excellent (also free tools) that can automate the process of code coverage analysis and perform it quite comprehensively.
+
 The following are examples of best practices applied in the project from the [clean code cheat sheet](https://github.com/federueda/ASW/blob/master/doc/cleancode/cheatsheet.pdf):
 
 - Boy Scout Rule: "*Leave the campground cleaner than you found it.*". Clean code developers leave code in a better state than they found it. So after work accomplished code shall apply more to CCD values than before. What exactly to be done is specific to situation and code – and of course to the grade currently worked on. A CCD in read grade would for an instance move code into version control, if it wasn’t yet in there. And he would focus on eliminating any kind of redundancies which are violations of the DRY principle.
-
-- Don’t Repeat Yourself (DRY): 
 
 - Version Control: Version control eliminates fear to do something wrong and break the system.
 

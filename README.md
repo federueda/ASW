@@ -106,7 +106,7 @@ PyBuilder is used to integrate the testing into the build management. Steps were
 ## 6. Continous Delivery (show pipeline in Travis-CI)
 [![Build Status](https://travis-ci.org/federueda/ASW.svg?branch=master)](https://travis-ci.org/federueda/ASW)
 
-Python projects need to provide the script key in their .travis.yml to specify what command to run tests with. You can check the [Travis-CI dashboard](https://travis-ci.org/federueda/ASW).
+I used Travis-CI to manage some tasks around continous integration creating the .travis.yml. In this case the Travis Pipeline tasks were executed in the build automation section, but we could see the [Travis-CI dashboard](https://travis-ci.org/federueda/ASW) where requirements.txt is executed.
 
 ## 7. IDE
 

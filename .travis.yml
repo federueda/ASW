@@ -7,10 +7,7 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  #- skip       # Travis requires a `script` property, but we do not need it
-  - python -m unittest
-  - python setup.py build_sphinx
+  - skip       # Travis requires a `script` property, but we do not need it
 jobs:
   include:
-    - stage: build and test # This stage builds and lints in parallel
-      name: Build
+    - skip

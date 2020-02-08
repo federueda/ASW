@@ -1,5 +1,6 @@
 from models.purchase_process import Purchase_Process
 
+
 pp = Purchase_Process(2222,"Monitor",20)
 assert pp.Purchase_Process == 2222
 assert pp.Product_Name == "Monitor"

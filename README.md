@@ -142,7 +142,7 @@ A second directory is the dist directory which contains the distribution. The di
 PyBuilder is used to integrate the testing into the build management. Steps were explained in the section before, but details of configuration could be find in the [PyBuilder Tutorial](https://pybuilder.github.io/documentation/tutorial.html#.XjrZ-RNKj6C).
 
 ## 6. Continous Delivery (show pipeline in Travis-CI)
-
+<img src="https://travis-ci.org/federueda/ASW.svg?branch=master" width="100" height="10" title="Travis">
 Python projects need to provide the script key in their .travis.yml to specify what command to run tests with. You can check the [Travis dashboard](https://travis-ci.org/federueda/ASW).
 
 ## 7. IDE

@@ -52,13 +52,7 @@ For the metrics, I used [SonarCloud](https://sonarcloud.io/). Connecting this to
 
 In particular, it was a valuable tool for realizing some issues and points for improvement in the initial code. The Duplications metric was a focal-point for starting to make some changes, that results in a more efficient code. Also, the code smells gave me a good overview of the complexity and the level of code that is confusing and difficult to mantain.
 
-In the following [link](https://sonarcloud.io/dashboard?id=federueda_ASW) you can find the dashboard displaying several metrics for the code.
-
-Also this is a view of a common SonarCloud dashboard:
-
-<p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/figures/sonarcloud/SonarCloudDash.png" width="400" height="300" title="SC">
-</p>
+[Here](https://sonarcloud.io/dashboard?id=federueda_ASW) you can find the dashboard displaying main metrics for the code.
 
 ## 3. Clean Code Development (at least 5 points + 10 cheat sheet)
 
@@ -96,7 +90,7 @@ Build Automation or Management is the process of scripting and automating the re
 For the build automation of this project, I used the PyBuilder that is a "software build tool written in pure Python which mainly targets Python applications. It is based on the concept of dependency based programming but also comes along with powerful plugin mechanism that allows the construction of build life cycles similar to those known from other famous build tools like Apache Maven" (extracted from [Pybuilder homepage](https://pybuilder.github.io/)).
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/figures/builder/pybuilder_intro.png" width="900" height="131" title="BuildIntro">
+<img src="https://github.com/federueda/ASW/blob/master/figures/builder/pybuilder_intro.png" width="700" height="100" title="BuildIntro">
 </p>
 
 The python version supported by this tool is Python 3.6.10, so it is installed and used with virtualenv, check that was sucessfully created the venv, activate it and assign variables to ./bash_profile.
@@ -130,7 +124,7 @@ For adding scripts you just put them in the directory src/main/scripts.
 
 ### Step 4: Write Unit Tests
 
-For adding scripts you just put them in the directory src/unittest/python. You can check the [tests folder](https://github.com/federueda/ASW/tree/master/src/unittest).
+For adding scripts you just put them in the directory src/unittest/python. You can check the [tests folder](https://github.com/federueda/ASW/tree/master/src/unittest/python).
 
 ### Step 5: Installing needed dependencies
 
@@ -151,8 +145,8 @@ A second directory is the dist directory which contains the distribution. The di
 PyBuilder is used to integrate the testing into the build management. Steps were explained in the section before, but details of configuration could be find in the [PyBuilder Tutorial](https://pybuilder.github.io/documentation/tutorial.html#.XjrZ-RNKj6C).
 
 ## 6. Continous Delivery (show pipeline in Travis-CI)
-<img src="https://travis-ci.org/federueda/ASW.svg?branch=master" width="100" height="20" title="Travis">
-Python projects need to provide the script key in their .travis.yml to specify what command to run tests with. You can check the [Travis dashboard](https://travis-ci.org/federueda/ASW).
+[![Build Status](https://travis-ci.org/federueda/ASW.svg?branch=master)](https://travis-ci.org/federueda/ASW)
+Python projects need to provide the script key in their .travis.yml to specify what command to run tests with. You can check the [Travis-CI dashboard](https://travis-ci.org/federueda/ASW).
 
 ## 7. IDE
 

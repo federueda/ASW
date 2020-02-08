@@ -57,18 +57,13 @@ Also this is a view of a common SonarCloud dashboard:
 
 - **3.1.1 Don’t Repeat Yourself (DRY):** Try to avoid the copy and paste practice and instead encapsulate this repeated code for example in functions. You can check the examples in the code [here](https://github.com/federueda/ASW/blob/master/src/main/python/models/provider.py#L1).
 - **3.1.2 Automated Unit Tests:** Automation simply saves time. And the more complex the code, the greater the reduction in fear. You can check automated unit tests [here](https://github.com/federueda/ASW/tree/master/src/unittest).
-- **3.1.3 Code Coverage Analysis:** it is automated inside the pybuilder (builder automation) process using Python-Coverage plugin. You can check the code and plugin inside the [build.py](https://github.com/federueda/ASW/blob/master/build.py) file. The following is the result of the test coverage:
-
-<p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/doc/sonarcloud/AAA.png" width="400" height="300" title="SC">
-</p>
-
+- **3.1.3 Code Coverage Analysis:** it is automated inside the pybuilder (builder automation) process using Python-Coverage plugin. You can check the code and plugin inside the [build.py](https://github.com/federueda/ASW/blob/master/build.py) file. You can see the result of the test coverage in section 3.16
 - **3.1.4 Continuous Integration:** for this project is used the Travis-CI tool, see [CI](https://travis-ci.org/federueda/ASW) dashboard.
 - **3.1.5 Version Control:** for this project is used the Git tool, you can check releases [here](https://github.com/federueda/ASW/releases).
 - **3.1.6 Use a Buildmanagement Tool:** nowadays, documentation generation, testing, creating the binaries, etc. cannot be done manually. It is used pybuilder tool for performing these actions. You can check the [build.py](https://github.com/federueda/ASW/blob/master/build.py) file used for build automation. I.e. you can see a view of the process:
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/figures/builder/Build_Auto.png" width="400" height="300" title="BA">
+<img src="https://github.com/federueda/ASW/blob/master/figures/builder/Build_Auto.png" width="600" height="450" title="BA">
 </p>
 
 ### 3.2 Clean Code Cheat Sheet:

@@ -1,5 +1,5 @@
 # Smart scoring of contracts/quotations for companies
-## Advance Software Programming - Concepts
+## Advanced Software Programming - Concepts
 
 ## Introduction
 

@@ -9,7 +9,6 @@ Welcome to contacts_doc's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
 intro
 contracts
 dsl

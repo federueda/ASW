@@ -10,9 +10,8 @@ use_plugin("python.distutils")
 use_plugin("python.sphinx") #documentation
 use_plugin('pypi:pybuilder_pip_tools', '==1.*')
 
-default_task = ["clean", "install_dependencies", "publish", "pip_sync", "run"]
-#default_task = "sphinx_generate_documentation"
-#default_task = "pip_sync"
+default_task = ["clean", "install_dependencies", "publish", "pip_sync", "run","sphinx_generate_documentation"]
+
 
 @init
 def initialize(project):

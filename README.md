@@ -55,6 +55,8 @@ In the following [link](https://sonarcloud.io/dashboard?id=federueda_ASW) you ca
 
 Also this is a view of a common SonarCloud dashboard:
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=federueda_ASW&metric=alert_status)](https://sonarcloud.io/dashboard?id=federueda_ASW)[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=federueda_ASW&metric=security_rating)](https://sonarcloud.io/dashboard?id=federueda_ASW)[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=federueda_ASW&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=federueda_ASW)
+
 <p align="center">
 <img src="https://github.com/federueda/ASW/blob/master/figures/sonarcloud/SonarCloudDash.png" width="400" height="300" title="SC">
 </p>

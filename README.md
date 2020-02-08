@@ -52,18 +52,18 @@ For the metrics, I used [SonarCloud](https://sonarcloud.io/). Connecting this to
 
 In particular, it was a valuable tool for realizing some issues and points for improvement in the initial code. The Duplications metric was a focal-point for starting to make some changes, that results in a more efficient code. Also, the code smells gave me a good overview of the complexity and the level of code that is confusing and difficult to mantain.
 
-[Here](https://sonarcloud.io/dashboard?id=federueda_ASW) you can find the dashboard displaying main metrics for the code.
+See the [SonarCloud Dashboard](https://sonarcloud.io/dashboard?id=federueda_ASW) displaying main metrics for the code.
 
 ## 3. Clean Code Development (at least 5 points + 10 cheat sheet)
 
 ### 3.1 CCD Principles:
 
 - **3.1.1 Don’t Repeat Yourself (DRY):** Try to avoid the copy and paste practice and instead encapsulate this repeated code for example in functions. You can check the examples in the code [here](https://github.com/federueda/ASW/blob/master/src/main/python/models/provider.py#L1).
-- **3.1.2 Automated Unit Tests:** Automation simply saves time. And the more complex the code, the greater the reduction in fear. You can check automated unit tests [here](https://github.com/federueda/ASW/tree/master/src/unittest).
+- **3.1.2 Automated Unit Tests:** Automation simply saves time. And the more complex the code, the greater the reduction in fear. You can check automated unit tests [here](https://github.com/federueda/ASW/tree/master/src/unittest/python).
 - **3.1.3 Code Coverage Analysis:** it is automated inside the pybuilder (builder automation) process using Python-Coverage plugin. You can check the code and plugin inside the [build.py](https://github.com/federueda/ASW/blob/master/build.py) file. You can see the result of the test coverage in section 3.16
-- **3.1.4 Continuous Integration:** for this project is used the Travis-CI tool, see [CI](https://travis-ci.org/federueda/ASW) dashboard.
+- **3.1.4 Continuous Integration:** for this project is used the Travis-CI tool, you can the CI [dashboard](https://travis-ci.org/federueda/ASW).
 - **3.1.5 Version Control:** for this project is used the Git tool, you can check releases [here](https://github.com/federueda/ASW/releases).
-- **3.1.6 Use a Buildmanagement Tool:** nowadays, documentation generation, testing, creating the binaries, etc. cannot be done manually. It is used pybuilder tool for performing these actions. You can check the [build.py](https://github.com/federueda/ASW/blob/master/build.py) file used for build automation. I.e. you can see a view of the process:
+- **3.1.6 Use a Buildmanagement Tool:** nowadays, documentation generation, testing, creating the binaries, etc. cannot be done manually. It is used pybuilder tool for performing these actions. You can check the [build.py](https://github.com/federueda/ASW/blob/master/build.py) file used for build automation. The following is a view of the building process using pybuilder:
 
 <p align="center">
 <img src="https://github.com/federueda/ASW/blob/master/figures/builder/Build_Auto.png" width="600" height="450" title="BA">
@@ -74,14 +74,14 @@ In particular, it was a valuable tool for realizing some issues and points for i
 Now, the following are examples of best practices applied to the project from the [clean code cheat sheet](https://github.com/federueda/ASW/blob/master/figures/cleancode/cheatsheet.pdf):
 
 - **3.2.1 Boy Scout Rule:** leave the campground cleaner than you found it.
-- **3.2.2 Don´t manage multiple languages in one source file:** see Python file [here](https://github.com/federueda/ASW/blob/master/src/main/python/contracts.py).
+- **3.2.2 Don´t manage multiple languages in one source file:** reference to python code [contracts.py](https://github.com/federueda/ASW/blob/master/src/main/python/contracts.py).
 - **3.2.3 Project Build Requires Only One Step:** Check out and then build with a single command, in this case pyb command from pybuilder, check the [build.py](https://github.com/federueda/ASW/blob/master/build.py).
-- **3.2.4 Executing tests requires only one step:** Run all unit tests with a single command, in this case using the [unittest](https://github.com/federueda/ASW/tree/master/src/unittest) plugin in pybuilder.
+- **3.2.4 Executing tests requires only one step:** Run all unit tests with a single command, in this case using the unittest plugin in pybuilder. See unit [test files](https://github.com/federueda/ASW/tree/master/src/unittest/python).
 - **3.2.5 Dead Comment, Code:** delete unused things.
 - **3.2.6 Poorly Written Comment:** comment does not add any value (redundant to code), is not well formed, not correct grammar/spelling.
 - **3.2.7 Single Responsibility Principle (SRP):** single Responsibility Principle (SRP) is one of the SOLID principles stating that a calls shall have only one responsibility.
 - **3.2.8 Understand the Algorithm:** Just working is not enough, make sure you understand why it works.
-- **3.2.9 Test Method Naming:** Names reflect what is tested, an example in the [code](https://github.com/federueda/ASW/blob/master/src/main/python/contracts.py#L304)
+- **3.2.9 Test Method Naming:** Names reflect what is tested, an example in the python file [contracts.py](https://github.com/federueda/ASW/blob/master/src/main/python/contracts.py#L304).
 
 ## 4. Build Management
 
@@ -107,38 +107,24 @@ $ pip install pybuilder
 The following are the main steps to setting up the project for building automation using PyBuilder.
 
 ### Step 1: Start configuration of PyBuilder
-
-PyBuilder is configured using a Python file that is named build.py. This is the main file to set up, starting with the instruction to build the project, going through measuring test coverage and finishing with building the whole distribution to make the code available to 3rd parties for example.
-
-You can check the [build.py](https://github.com/federueda/ASW/tree/master/build.py) file for details.
+PyBuilder is configured using a Python file that is named build.py. This is the main file to set up, starting with the instruction to build the project, going through measuring test coverage and finishing with building the whole distribution to make the code available to 3rd parties for example. You can check the [build.py](https://github.com/federueda/ASW/tree/master/build.py) file for details.
 
 ### Step 2: Add the source files
-
-PyBuilder separates source files. The default location for python sources is:
-
-src/main/python
+PyBuilder separates source files. The default location for python sources is: src/main/python
 
 ### Step 3: Adding Scripts
-
 For adding scripts you just put them in the directory src/main/scripts.
 
 ### Step 4: Write Unit Tests
-
 For adding scripts you just put them in the directory src/unittest/python. You can check the [tests folder](https://github.com/federueda/ASW/tree/master/src/unittest/python).
 
 ### Step 5: Installing needed dependencies
-
 $ pyb install_dependencies
 
 ### Step 6: Building the distribution
+In Python, the usual way to do this is using distutils. PyBuilder automatically discovers the  modules, packages and scripts and writes configuration for the setup script. As the final step the following command gives us the building for the project: $ pyb -v
 
-In Python, the usual way to do this is using distutils. PyBuilder automatically discovers the  modules, packages and scripts and writes configuration for the setup script. As the final step the following command gives us the building for the project (in verbose mode):
-
-$ pyb -v
-
-In the reports directory you can find some reports each containing detailed information on a tool or command, pyb invoked during the build. Also you can check the unittest and coverage report.
-
-A second directory is the dist directory which contains the distribution. The distribution directory contains the same sources but in a Python-typical directory layout. You can also find the setup.py
+In the reports directory you can find some reports each containing detailed information on a tool or command, pyb invoked during the build. Also you can check the unittest and coverage report. A second directory is the dist directory which contains the distribution. The distribution directory contains the same sources but in a Python-typical directory layout. 
 
 ## 5. Testing integrated in Build Management
 

@@ -7,7 +7,7 @@ This is a simple code in python used to depict some concepts around the designin
 
 This code simulates a process from fictitious company ABC, from the definition of the criteria to score a quotation, passing through populating the purchase process, to the display of the results of providers selected by purchase process.
 
-For running the code you need to enter the path of every file needed for the system to work, in this case the list of providers, purchase processes, quotations and the scoring policy as follows (assuming the files are in the same folder as contracts.py)
+For running the code you need to enter the path of every file needed for the system to work, in this case the list of providers, purchase processes, quotations and the scoring policy as follows (assuming the files are in the same folder as contracts.py). Yopu can find these example files in the [data folder](https://github.com/federueda/ASW/tree/master/data).
 
 $ python3 contracts.py --providers Providers.csv --purchase Purchase_Process.csv --quotations Quotations.csv --scoring Scoring_Policy.csv
 

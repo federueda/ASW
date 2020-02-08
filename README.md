@@ -85,9 +85,9 @@ Now, the following are examples of best practices applied to the project from th
 
 ## 4. Build Management
 
-Build Automation or Management is the process of scripting and automating the retrieval of software code from a repository, compiling it into a binary artifact, executing automated functional tests, and publishing it into a shared and centralized repository ([from: AemCorp](https://www.aemcorp.com/devops/build-automation)).
+Build Automation or Build Management is the process of scripting and automating the retrieval of software code from a repository, compiling it into a binary artifact, executing automated functional tests, and publishing it into a shared and centralized repository ([from: AemCorp](https://www.aemcorp.com/devops/build-automation)).
 
-For the build automation of this project, I used the PyBuilder that is a "software build tool written in pure Python which mainly targets Python applications. It is based on the concept of dependency based programming but also comes along with powerful plugin mechanism that allows the construction of build life cycles similar to those known from other famous build tools like Apache Maven" (extracted from [Pybuilder homepage](https://pybuilder.github.io/)).
+For this project, I used the PyBuilder that is a software build tool written in pure Python which mainly targets Python applications. It is based on the concept of dependency based programming but also comes along with powerful plugin mechanism that allows the construction of build life cycles similar to those known from other famous build tools like Apache Maven. (extracted from [Pybuilder homepage](https://pybuilder.github.io/)).
 
 <p align="center">
 <img src="https://github.com/federueda/ASW/blob/master/figures/builder/pybuilder_intro.png" width="700" height="100" title="BuildIntro">
@@ -95,7 +95,7 @@ For the build automation of this project, I used the PyBuilder that is a "softwa
 
 PyBuilder is configured using a Python file that is named build.py. This is the main file to set up, starting with the instruction to build the project, going through measuring test coverage and finishing with building the whole distribution to make the code available to 3rd parties for example. You can check the [build.py](https://github.com/federueda/ASW/tree/master/build.py) file for details.
 
-For adding unit tests you just put them in the directory src/unittest/python. You can check the [tests folder](https://github.com/federueda/ASW/tree/master/src/unittest/python).
+I used pybuilder for several tasks including unit testing, you can check the [unit tests](https://github.com/federueda/ASW/tree/master/src/unittest/python). Also, generating documentation for the project using [sphinx](https://www.sphinx-doc.org/en/master/) and also automatically generating files as [requirements.txt](https://github.com/federueda/ASW/blob/master/requirements.txt) using pipreqs as pybuilder tasks.
 
 In the reports directory you can find some reports each containing detailed information on a tool or command, pyb invoked during the build. Also you can check the unittest and coverage report. A second directory is the dist directory which contains the distribution. The distribution directory contains the same sources but in a Python-typical directory layout. 
 

@@ -12,7 +12,7 @@ For running the code you need to enter the path of every file needed for the sys
 $ python3 contracts.py --providers Providers.csv --purchase Purchase_Process.csv --quotations Quotations.csv --scoring Scoring_Policy.csv
 
 <p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/figures/others/Code.png" width="400" height="300" title="Code">
+<img src="https://github.com/federueda/ASW/blob/master/figures/others/Code.png" width="400" height="220" title="Code">
 </p>
 
 ## 1. Unified Modeling Language (UML)

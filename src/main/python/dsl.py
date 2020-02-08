@@ -25,18 +25,7 @@ def cname(o):
 
 
 class Coordinate(object):
-    """This gets the foobar
-
-        This really should have a full function definition, but I am too lazy.
-
-        >>> print get_foobar(10, 20)
-        30
-        >>> print get_foobar('a', 'b')
-        ab
-
-        Isn't that what you want?
-
-        """
+    """Prueba de Federico"""
 
     def __init__(self, x, y):
         self.x = x
@@ -129,5 +118,3 @@ while not stop:
     # Functions as parameters and return values (F(G(x))) ???
 
     finish, player, stop, game = command_validator(mm.model_from_str(command), finish, player, stop, game, board_size)
-
-

@@ -46,6 +46,7 @@ The following diagram shows some of the classes and relationships between them.
 </p>
 
 ## 2. Metrics
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=federueda_ASW&metric=alert_status)](https://sonarcloud.io/dashboard?id=federueda_ASW)[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=federueda_ASW&metric=security_rating)](https://sonarcloud.io/dashboard?id=federueda_ASW)[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=federueda_ASW&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=federueda_ASW)
 
 For the metrics, I used [SonarCloud](https://sonarcloud.io/). Connecting this tool with GitHub, allows an automatic scanning of the code, letting the user configure which kind of measurements to be performed.
 
@@ -54,8 +55,6 @@ In particular, it was a valuable tool for realizing some issues and points for i
 In the following [link](https://sonarcloud.io/dashboard?id=federueda_ASW) you can find the dashboard displaying several metrics for the code.
 
 Also this is a view of a common SonarCloud dashboard:
-
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=federueda_ASW&metric=alert_status)](https://sonarcloud.io/dashboard?id=federueda_ASW)[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=federueda_ASW&metric=security_rating)](https://sonarcloud.io/dashboard?id=federueda_ASW)[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=federueda_ASW&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=federueda_ASW)
 
 <p align="center">
 <img src="https://github.com/federueda/ASW/blob/master/figures/sonarcloud/SonarCloudDash.png" width="400" height="300" title="SC">

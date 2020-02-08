@@ -58,9 +58,9 @@ def Time(pp, Quotations, Scoring):
 
 
 def Quality_c(Providers, Quotations, Scoring):
-    # """This scores if has or not quality certification. Quality, lcompany and Vkey functions do not depend on purchase
+    # This scores if has or not quality certification. Quality, lcompany and Vkey functions do not depend on purchase
     # process (they are or not independently), but price and time score must be compared with the rest of quotations from
-    # the purchase process"""
+    # the purchase process
 
     for x in range(0, len(Providers)):
         if Providers[x].Quality_Cert == True:
@@ -85,7 +85,7 @@ def Valid_Key(Providers, Quotations, Scoring):
 
 
 def Position(pp, Quotations):
-    # """Assign the position or Ranking (attribute from Quotation) of the Quotation"""
+    # Assign the position or Ranking (attribute from Quotation) of the Quotation
 
     dic = {'ordered_list': [], 'id_provider': [], 'Purchase_P': []}
     data = pd.DataFrame(columns=('ordered_list', 'id_provider', 'Purchase_P'))
@@ -108,7 +108,7 @@ def Position(pp, Quotations):
 
 
 def Show(pp, Quotations):
-    # """Show every quotations of the respective purchase process, but it sorts them first and then shows them """
+    # Show every quotations of the respective purchase process, but it sorts them first and then shows them
 
     dic = {'ordered_list': [], 'pos': []}
     data = pd.DataFrame(columns=('ordered_list', 'id_provider', 'Purchase_P'))
@@ -134,15 +134,15 @@ def Allpp(Purchase_items):
 
 
 def Generate(Purchase_items, Quotations, Providers):
-    # """This is the function to show the menu for the user"""
+    # This is the function to show the menu for the user
 
     print("")
-    print("1. Show purchase processes(code and name")
+    print("1. Show purchase processes(code and name)")
     print("2. Create CSV file and exit")
     print("3. Show  purchase process(complete)")
     print("4. Show Provider(individual)")
     print("5. Show Purchase_Process(individual)")
-    print("6. Show Quotation(individual")
+    print("6. Show Quotation(individual)")
     print("7. Exit and not save")
     while True:
         try:
@@ -278,7 +278,7 @@ def Generate(Purchase_items, Quotations, Providers):
         while True:
             try:
                 print("")
-                print("Type provider(quotation")
+                print("Type provider(quotation)")
                 print("")
                 cod_provider = int(input())
                 break
@@ -302,9 +302,9 @@ def Generate(Purchase_items, Quotations, Providers):
 
 
 def Execute(Providers, Purchase_Items, Quotations, Scoring):
-    # """This executes the code
-    # Quality, Lcompany y Valid_key do not depend on purchase process (they are or not independently), but price and time
-    # score must be compared with the rest of quotations from the purchase process"""
+    # This executes the code Quality, Lcompany y Valid_key do not depend on
+    # purchase process (they are or not independently), but price and time score
+    # must be compared with the rest of quotations from the purchase process
 
     Quality_c(Providers, Quotations, Scoring)
     Lcompany(Providers, Quotations, Scoring)
@@ -316,11 +316,11 @@ def Execute(Providers, Purchase_Items, Quotations, Scoring):
     # show(Purchase_Items[x].Purchase_Process,Quotations)
 
 
-# """These are the Sequential Steps to get information (tables) and start executing analysis"""
+# These are the Sequential Steps to get information (tables) and start executing analysis
 
-# """I create 3 lists which contain providers, purchase processes and quotations, these lists have the same name
+# I create 3 lists which contain providers, purchase processes and quotations, these lists have the same name
 # as classes but in plural. They are initialized as empty lists, for storing information related to providers,
-# purchase_items and quotations"""
+# purchase_items and quotations
 
 Providers = []
 Purchase_Items = []

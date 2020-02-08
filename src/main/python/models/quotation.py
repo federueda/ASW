@@ -1,8 +1,8 @@
 class Quotation:
 
- #""""Quotation" class will describe the objects of quotations sent by providers
- #that could be registered (points) or not (no points),and will have all the
- #information needed to score the quotation and classify it by Purchase_Process_ID"""
+ # Quotation class will describe the objects of quotations sent by providers
+ # that could be registered (points) or not (no points),and will have all the
+ # information needed to score the quotation and classify it by Purchase_Process_ID
 
 	def __init__(self,Provider_Code,Purchase_Process,Product_Name,Quantity,Unit_Price,Delivery_Time):
 		self.Provider_Code=Provider_Code

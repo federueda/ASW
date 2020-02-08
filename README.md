@@ -7,6 +7,14 @@ This is a simple code in python used to depict some concepts around the designin
 
 This code simulates a process from fictitious company ABC, from the definition of the criteria to score a quotation, passing through populating the purchase process, to the display of the results of providers selected by purchase process.
 
+For running the code you need to enter the path of every file needed for the system to work, in this case the list of providers, purchase processes, quotations and the scoring policy as follows (assuming the files are in the same folder as contracts.py)
+
+$ python3 contracts.py --providers Providers.csv --purchase Purchase_Process.csv --quotations Quotations.csv --scoring Scoring_Policy.csv
+
+<p align="center">
+<img src="https://github.com/federueda/ASW/blob/master/figures/others/Code.png" width="400" height="300" title="Code">
+</p>
+
 ## 1. Unified Modeling Language (UML)
 
 In this section, I will show some UML diagrams used for explaining to other people the sowftare elements for this excercise and also some sofwtare's behaviors. It is an excellent set of notation elements that help us to model business processes and linking them to our software.
@@ -39,7 +47,7 @@ The following diagram shows some of the classes and relationships between them.
 
 ## 2. Metrics
 
-For the metrics, I used [SonarCloud](https://sonarcloud.io/). Connecting this tool with GitHub, allows an automatic scanning of the code, letting the user configure which kind of measurements to be performed. 
+For the metrics, I used [SonarCloud](https://sonarcloud.io/). Connecting this tool with GitHub, allows an automatic scanning of the code, letting the user configure which kind of measurements to be performed.
 
 In particular, it was a valuable tool for realizing some issues and points for improvement in the initial code. The Duplications metric was a focal-point for starting to make some changes, that results in a more efficient code. Also, the code smells gave me a good overview of the complexity and the level of code that is confusing and difficult to mantain.
 
@@ -84,7 +92,7 @@ Now, the following are examples of best practices applied to the project from th
 
 Build Automation or Management is the process of scripting and automating the retrieval of software code from a repository, compiling it into a binary artifact, executing automated functional tests, and publishing it into a shared and centralized repository ([from: AemCorp](https://www.aemcorp.com/devops/build-automation)).
 
-For the build automation of this project, I used the PyBuilder that is a "software build tool written in pure Python which mainly targets Python applications. It is based on the concept of dependency based programming but also comes along with powerful plugin mechanism that allows the construction of build life cycles similar to those known from other famous build tools like Apache Maven" (extracted from [Pybuilder homepage](https://pybuilder.github.io/)). 
+For the build automation of this project, I used the PyBuilder that is a "software build tool written in pure Python which mainly targets Python applications. It is based on the concept of dependency based programming but also comes along with powerful plugin mechanism that allows the construction of build life cycles similar to those known from other famous build tools like Apache Maven" (extracted from [Pybuilder homepage](https://pybuilder.github.io/)).
 
 <p align="center">
 <img src="https://github.com/federueda/ASW/blob/master/figures/builder/pybuilder_intro.png" width="900" height="131" title="BuildIntro">
@@ -96,7 +104,7 @@ $ pyenv virtualenv 3.6.10 <name-to-give-it>\
 $ pyenv virtualenvs\
 $ pyenv activate <name>\
 $ pyenv deactivate
-  
+
 Install PyBuilder
 
 $ pip install pybuilder
@@ -117,11 +125,11 @@ src/main/python
 
 ### Step 3: Adding Scripts
 
-For adding scripts you just put them in the directory src/main/scripts. 
+For adding scripts you just put them in the directory src/main/scripts.
 
 ### Step 4: Write Unit Tests
 
-For adding scripts you just put them in the directory src/unittest/python. You can check the [tests folder](https://github.com/federueda/ASW/tree/master/src/unittest). 
+For adding scripts you just put them in the directory src/unittest/python. You can check the [tests folder](https://github.com/federueda/ASW/tree/master/src/unittest).
 
 ### Step 5: Installing needed dependencies
 
@@ -179,7 +187,7 @@ In the following diagram is possible to understand the basic DSL functionalities
 <img src="https://github.com/federueda/ASW/blob/master/figures/dsl/DSL.jpg" width="691" height="299" title="DSL_Diagram">
 </p>
 
-## 9. Functional Programming 
+## 9. Functional Programming
 
 Prove that you have covered the following:
 

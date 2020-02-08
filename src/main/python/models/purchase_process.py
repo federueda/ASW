@@ -1,8 +1,8 @@
 class Purchase_Process:
 
- #"""Purchase_Process class will describe the objects of items needed to buy for
- #the company (purchase process), that will be read from a .csv file with
- #information as ProcessID, ProdName, Qty, DelTime, Loc."""
+ # Purchase_Process class will describe the objects of items needed to buy for
+ # the company (purchase process), that will be read from a .csv file with
+ # information as ProcessID, ProdName, Qty, DelTime, Loc.
 
 	def __init__(self,Purchase_Process,Product_Name,Quantity_Required):
 		self.Purchase_Process=Purchase_Process

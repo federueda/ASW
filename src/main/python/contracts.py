@@ -16,6 +16,9 @@ parser.add_argument("--scoring", dest="scoring_file")
 
 
 def Price(pp, Quotations, Scoring):
+
+    """ This scores in terms of the price and sorts according this item """
+
     dic = {'ordered_list': [], 'id_provider': [], 'Purchase_P': []}
     data = pd.DataFrame(columns=('ordered_list', 'id_provider', 'Purchase_P'))
     for x in range(0, len(Quotations)):
@@ -37,6 +40,9 @@ def Price(pp, Quotations, Scoring):
 
 
 def Time(pp, Quotations, Scoring):
+
+    """ This scores in terms of the delivery time and sorts according this item """
+
     dic = {'ordered_list': [], 'id_provider': [], 'Purchase_P': []}
     data = pd.DataFrame(columns=('ordered_list', 'id_provider', 'Purchase_P'))
     for x in range(0, len(Quotations)):
@@ -58,7 +64,7 @@ def Time(pp, Quotations, Scoring):
 
 
 def Quality_c(Providers, Quotations, Scoring):
-    
+
     """ This scores if has or not quality certification. Quality, lcompany and Vkey functions do not depend on purchase
      process (they are or not independently), but price and time score must be compared with the rest of quotations from
      the purchase process """
@@ -71,6 +77,9 @@ def Quality_c(Providers, Quotations, Scoring):
 
 
 def Lcompany(Providers, Quotations, Scoring):
+
+    """ This scores in terms of if the company is local or not, and scores according this item """
+
     for x in range(0, len(Providers)):
         if Providers[x].Local_Company == True:
             for y in range(0, len(Quotations)):
@@ -86,7 +95,8 @@ def Valid_Key(Providers, Quotations, Scoring):
 
 
 def Position(pp, Quotations):
-    # Assign the position or Ranking (attribute from Quotation) of the Quotation
+
+    """ Assign the position or Ranking (attribute from Quotation) of the Quotation """
 
     dic = {'ordered_list': [], 'id_provider': [], 'Purchase_P': []}
     data = pd.DataFrame(columns=('ordered_list', 'id_provider', 'Purchase_P'))
@@ -109,7 +119,8 @@ def Position(pp, Quotations):
 
 
 def Show(pp, Quotations):
-    # Show every quotations of the respective purchase process, but it sorts them first and then shows them
+
+    """ Show every quotations of the respective purchase process, but it sorts them first and then shows them """
 
     dic = {'ordered_list': [], 'pos': []}
     data = pd.DataFrame(columns=('ordered_list', 'id_provider', 'Purchase_P'))
@@ -135,7 +146,9 @@ def Allpp(Purchase_items):
 
 
 def Generate(Purchase_items, Quotations, Providers):
-    # This is the function to show the menu for the user
+
+    """ This is the function to show the menu for the user, offering several options to
+    check the data and see the results """
 
     print("")
     print("1. Show purchase processes(code and name)")
@@ -303,9 +316,10 @@ def Generate(Purchase_items, Quotations, Providers):
 
 
 def Execute(Providers, Purchase_Items, Quotations, Scoring):
-    # This executes the code Quality, Lcompany y Valid_key do not depend on
-    # purchase process (they are or not independently), but price and time score
-    # must be compared with the rest of quotations from the purchase process
+
+    """ This executes the code Quality, Lcompany y Valid_key do not depend on
+    purchase process (they are or not independently), but price and time score
+    must be compared with the rest of quotations from the purchase process """
 
     Quality_c(Providers, Quotations, Scoring)
     Lcompany(Providers, Quotations, Scoring)
@@ -317,13 +331,13 @@ def Execute(Providers, Purchase_Items, Quotations, Scoring):
     # show(Purchase_Items[x].Purchase_Process,Quotations)
 
 
-# These are the Sequential Steps to get information (tables) and start executing analysis
-
-# I create 3 lists which contain providers, purchase processes and quotations, these lists have the same name
-# as classes but in plural. They are initialized as empty lists, for storing information related to providers,
-# purchase_items and quotations
-
 def main():
+
+    """ These are the Sequential Steps to get information (tables) and start executing analysis
+    I create 3 lists which contain providers, purchase processes and quotations, these lists have the same name
+    as classes but in plural. They are initialized as empty lists, for storing information related to providers,
+    purchase_items and quotations """
+
     Providers = []
     Purchase_Items = []
     Quotations = []

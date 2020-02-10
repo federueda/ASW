@@ -33,11 +33,65 @@
   <div class="section" id="module-contracts">
 <span id="welcome-to-asw-s-documentation"></span><h1>Welcome to asw’s documentation!<a class="headerlink" href="#module-contracts" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
+<dt id="contracts.Execute">
+<code class="sig-prename descclassname">contracts.</code><code class="sig-name descname">Execute</code><span class="sig-paren">(</span><em class="sig-param">Providers</em>, <em class="sig-param">Purchase_Items</em>, <em class="sig-param">Quotations</em>, <em class="sig-param">Scoring</em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.Execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>This executes the code Quality, Lcompany y Valid_key do not depend on
+purchase process (they are or not independently), but price and time score
+must be compared with the rest of quotations from the purchase process</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="contracts.Generate">
+<code class="sig-prename descclassname">contracts.</code><code class="sig-name descname">Generate</code><span class="sig-paren">(</span><em class="sig-param">Purchase_items</em>, <em class="sig-param">Quotations</em>, <em class="sig-param">Providers</em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.Generate" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the function to show the menu for the user, offering several options to
+check the data and see the results</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="contracts.Lcompany">
+<code class="sig-prename descclassname">contracts.</code><code class="sig-name descname">Lcompany</code><span class="sig-paren">(</span><em class="sig-param">Providers</em>, <em class="sig-param">Quotations</em>, <em class="sig-param">Scoring</em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.Lcompany" title="Permalink to this definition">¶</a></dt>
+<dd><p>This scores in terms of if the company is local or not, and scores according this item</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="contracts.Position">
+<code class="sig-prename descclassname">contracts.</code><code class="sig-name descname">Position</code><span class="sig-paren">(</span><em class="sig-param">pp</em>, <em class="sig-param">Quotations</em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.Position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assign the position or Ranking (attribute from Quotation) of the Quotation</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="contracts.Price">
+<code class="sig-prename descclassname">contracts.</code><code class="sig-name descname">Price</code><span class="sig-paren">(</span><em class="sig-param">pp</em>, <em class="sig-param">Quotations</em>, <em class="sig-param">Scoring</em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.Price" title="Permalink to this definition">¶</a></dt>
+<dd><p>This scores in terms of the price and sorts according this item</p>
+</dd></dl>
+
+<dl class="function">
 <dt id="contracts.Quality_c">
 <code class="sig-prename descclassname">contracts.</code><code class="sig-name descname">Quality_c</code><span class="sig-paren">(</span><em class="sig-param">Providers</em>, <em class="sig-param">Quotations</em>, <em class="sig-param">Scoring</em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.Quality_c" title="Permalink to this definition">¶</a></dt>
 <dd><p>This scores if has or not quality certification. Quality, lcompany and Vkey functions do not depend on purchase
 process (they are or not independently), but price and time score must be compared with the rest of quotations from
 the purchase process</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="contracts.Show">
+<code class="sig-prename descclassname">contracts.</code><code class="sig-name descname">Show</code><span class="sig-paren">(</span><em class="sig-param">pp</em>, <em class="sig-param">Quotations</em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.Show" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show every quotations of the respective purchase process, but it sorts them first and then shows them</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="contracts.Time">
+<code class="sig-prename descclassname">contracts.</code><code class="sig-name descname">Time</code><span class="sig-paren">(</span><em class="sig-param">pp</em>, <em class="sig-param">Quotations</em>, <em class="sig-param">Scoring</em><span class="sig-paren">)</span><a class="headerlink" href="#contracts.Time" title="Permalink to this definition">¶</a></dt>
+<dd><p>This scores in terms of the delivery time and sorts according this item</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="contracts.main">
+<code class="sig-prename descclassname">contracts.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#contracts.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>These are the Sequential Steps to get information (tables) and start executing analysis
+I create 3 lists which contain providers, purchase processes and quotations, these lists have the same name
+as classes but in plural. They are initialized as empty lists, for storing information related to providers,
+purchase_items and quotations</p>
 </dd></dl>
 
 </div>

@@ -2,13 +2,8 @@
 Welcome to asw's documentation!
 ===============================
 
-.. automodule:: Sphinxtest
+.. automodule:: contracts
     :members:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
 
 
 Indices and tables

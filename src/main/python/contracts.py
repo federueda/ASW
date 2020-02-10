@@ -58,9 +58,10 @@ def Time(pp, Quotations, Scoring):
 
 
 def Quality_c(Providers, Quotations, Scoring):
-    # This scores if has or not quality certification. Quality, lcompany and Vkey functions do not depend on purchase
-    # process (they are or not independently), but price and time score must be compared with the rest of quotations from
-    # the purchase process
+    
+    """ This scores if has or not quality certification. Quality, lcompany and Vkey functions do not depend on purchase
+     process (they are or not independently), but price and time score must be compared with the rest of quotations from
+     the purchase process """
 
     for x in range(0, len(Providers)):
         if Providers[x].Quality_Cert == True:
@@ -322,26 +323,30 @@ def Execute(Providers, Purchase_Items, Quotations, Scoring):
 # as classes but in plural. They are initialized as empty lists, for storing information related to providers,
 # purchase_items and quotations
 
-Providers = []
-Purchase_Items = []
-Quotations = []
+def main():
+    Providers = []
+    Purchase_Items = []
+    Quotations = []
 
-arg = parser.parse_args()
+    arg = parser.parse_args()
 
-File = pd.read_csv(arg.providers_file)
+    File = pd.read_csv(arg.providers_file)
 
-for x in File.values:
-    Providers.append(provider_model.Provider(x[0], x[1], x[2], x[3], x[4]))
+    for x in File.values:
+        Providers.append(provider_model.Provider(x[0], x[1], x[2], x[3], x[4]))
 
-Scoring = pd.read_csv(arg.scoring_file).to_numpy()
+    Scoring = pd.read_csv(arg.scoring_file).to_numpy()
 
-Purchase_Request = pd.read_csv(arg.purchase_file)
-for x in Purchase_Request.values:
-    Purchase_Items.append(pp_model.Purchase_Process(x[0], x[1], x[2]))
+    Purchase_Request = pd.read_csv(arg.purchase_file)
+    for x in Purchase_Request.values:
+        Purchase_Items.append(pp_model.Purchase_Process(x[0], x[1], x[2]))
 
-Quotation_file = pd.read_csv(arg.quotations_file)
-for x in Quotation_file.values:
-    Quotations.append(quotation_model.Quotation(x[0], x[1], x[2], x[3], x[4], x[5]))
+    Quotation_file = pd.read_csv(arg.quotations_file)
+    for x in Quotation_file.values:
+        Quotations.append(quotation_model.Quotation(x[0], x[1], x[2], x[3], x[4], x[5]))
 
-Execute(Providers, Purchase_Items, Quotations, Scoring)
-Generate(Purchase_Items, Quotations, Providers)
+    Execute(Providers, Purchase_Items, Quotations, Scoring)
+    Generate(Purchase_Items, Quotations, Providers)
+
+if __name__ == '__main__':
+    main()

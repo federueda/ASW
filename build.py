@@ -10,8 +10,11 @@ use_plugin("python.distutils")
 use_plugin("python.sphinx") #documentation
 use_plugin('pypi:pybuilder_pip_tools', '==1.*')
 
-default_task = ["clean", "install_dependencies", "publish", "pip_sync", "run","sphinx_generate_documentation"]
+default_task = ["clean", "install_dependencies", "publish", "pip_sync", "pipreqs_task","sphinx_task"]
 
+@init
+def set_properties(project):
+    project.set_property("coverage_exceptions", ['contracts','dsl'])
 
 @init
 def initialize(project):
@@ -24,5 +27,11 @@ def initialize(project):
 	project.build_depends_on('pipreqs')
 
 @task
-def run():
+def pipreqs_task():
 	os.system("pipreqs ./src/main/python --force --savepath ./requirements.txt")
+
+@task
+def sphinx_task():
+	os.system("pip3 install -r requirements.txt")
+	os.chdir("./docs")
+	os.system("make html")

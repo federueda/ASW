@@ -63,11 +63,7 @@ See the [SonarCloud Dashboard](https://sonarcloud.io/dashboard?id=federueda_ASW)
 - **3.1.3 Code Coverage Analysis:** it is automated inside the pybuilder (builder automation) process using Python-Coverage plugin. You can check the code and plugin inside the [build.py](https://github.com/federueda/ASW/blob/master/build.py) file. You can see the result of the test coverage in section 3.16
 - **3.1.4 Continuous Integration:** for this project is used the Travis-CI tool, you can the CI [dashboard](https://travis-ci.org/federueda/ASW).
 - **3.1.5 Version Control:** for this project is used the Git tool, you can check releases [here](https://github.com/federueda/ASW/releases).
-- **3.1.6 Use a Buildmanagement Tool:** nowadays, documentation generation, testing, creating the binaries, etc. cannot be done manually. It is used pybuilder tool for performing these actions. You can check the [build.py](https://github.com/federueda/ASW/blob/master/build.py) file used for build automation. The following is a view of the building process using pybuilder:
-
-<p align="center">
-<img src="https://github.com/federueda/ASW/blob/master/figures/builder/Build_Auto.png" width="600" height="450" title="BA">
-</p>
+- **3.1.6 Use a Buildmanagement Tool:** nowadays, documentation generation, testing, creating the binaries, etc. cannot be done manually. It is used pybuilder tool for performing these actions. You can check the [build.py](https://github.com/federueda/ASW/blob/master/build.py) file used for build automation.
 
 ### 3.2 Clean Code Cheat Sheet:
 
@@ -95,9 +91,13 @@ For this project, I used the PyBuilder that is a software build tool written in 
 
 PyBuilder is configured using a Python file that is named build.py. This is the main file to set up, starting with the instruction to build the project, going through measuring test coverage and finishing with building the whole distribution to make the code available to 3rd parties for example. You can check the [build.py](https://github.com/federueda/ASW/tree/master/build.py) file for details.
 
-I used pybuilder for several tasks including unit testing, you can check the [unit tests](https://github.com/federueda/ASW/tree/master/src/unittest/python). Also, generating documentation for the project using [sphinx](https://www.sphinx-doc.org/en/master/) and also automatically generating files as [requirements.txt](https://github.com/federueda/ASW/blob/master/requirements.txt) using pipreqs as pybuilder tasks.
+I used pybuilder for several tasks including unit testing, you can check the [unit tests](https://github.com/federueda/ASW/tree/master/src/unittest/python). Also, generating documentation for the project using [sphinx](https://www.sphinx-doc.org/en/master/) and also automatically generating files as [requirements.txt](https://github.com/federueda/ASW/blob/master/requirements.txt) using pipreqs as pybuilder tasks. The following is the pybuilder process executing:
 
-In the reports directory you can find some reports each containing detailed information on a tool or command, pyb invoked during the build. Also you can check the unittest and coverage report. A second directory is the dist directory which contains the distribution. The distribution directory contains the same sources but in a Python-typical directory layout. 
+<p align="center">
+<img src="https://github.com/federueda/ASW/blob/master/figures/builder/Build_Auto.png" width="600" height="450" title="BA">
+</p>
+
+In the reports directory you can find some reports each containing detailed information on a tool or command, pyb invoked during the build. Also you can check the unittest and coverage report. A second directory is the dist directory which contains the distribution. The distribution directory contains the same sources but in a Python-typical directory layout.
 
 ## 5. Testing integrated in Build Management
 
@@ -155,3 +155,4 @@ Prove that you have covered the following:
 - **9.4 Use clojures / anonymous functions:** anonymous functions are not defined as standard functions, is not bound to an identifier and they are used once. You can see an example in the [code](https://github.com/federueda/ASW/blob/master/src/main/python/dsl.py#L34).
 
 - **9.5 Functions as parameters and return values:** You can see an example in the [code](https://github.com/federueda/ASW/blob/master/src/main/python/dsl.py#L66).
+

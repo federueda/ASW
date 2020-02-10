@@ -91,7 +91,7 @@ For this project, I used the PyBuilder that is a software build tool written in 
 
 PyBuilder is configured using a Python file that is named build.py. This is the main file to set up, starting with the instruction to build the project, going through measuring test coverage and finishing with building the whole distribution to make the code available to 3rd parties for example. You can check the [build.py](https://github.com/federueda/ASW/tree/master/build.py) file for details.
 
-I used pybuilder for several tasks including unit testing, you can check the [unit tests](https://github.com/federueda/ASW/tree/master/src/unittest/python). Also, generating documentation for the project using [sphinx](https://www.sphinx-doc.org/en/master/) and also automatically generating files as [requirements.txt](https://github.com/federueda/ASW/blob/master/requirements.txt) using pipreqs as pybuilder tasks. The following is the pybuilder process executing:
+I used pybuilder for several tasks including unit testing, you can check the [unit tests files](https://github.com/federueda/ASW/tree/master/src/unittest/python). Also, generating documentation for the project using [sphinx](https://www.sphinx-doc.org/en/master/), you can check the [index.html](https://github.com/federueda/ASW/blob/master/docs/_build/html/index.html) file that was auto-generated using this plugin in pybuilder, and also automatically generating files as [requirements.txt](https://github.com/federueda/ASW/blob/master/requirements.txt) using pipreqs plugin. The following is the pybuilder process executing:
 
 <p align="center">
 <img src="https://github.com/federueda/ASW/blob/master/figures/builder/Build_Auto.png" width="600" height="450" title="BA">

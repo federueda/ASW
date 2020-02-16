@@ -5,9 +5,9 @@
 
 This is a simple code in python used to depict some concepts around the designing and development of software.
 
-This code simulates a process from fictitious company ABC, from the definition of the criteria to score a quotation, passing through populating the purchase process, to the display of the results of providers selected by purchase process.
+The code simulates a process from fictitious company, from the definition of the criteria to score a quotation, passing through populating the purchase process, to the display of the results of providers selected by purchase process.
 
-For running the code you need to enter the path of every file needed for the system to work, in this case the list of providers, purchase processes, quotations and the scoring policy as follows (assuming the files are in the same folder as contracts.py). Yopu can find these example files in the [data folder](https://github.com/federueda/ASW/tree/master/data).
+For running the code you need to enter the path of every file needed for the system to work, in this case the list of providers, purchase processes, quotations and the scoring policy as follows (assuming the files are in the same folder as contracts.py). You can find these example files in the [data folder](https://github.com/federueda/ASW/tree/master/data).
 
 $ python3 contracts.py --providers Providers.csv --purchase Purchase_Process.csv --quotations Quotations.csv --scoring Scoring_Policy.csv
 
@@ -19,7 +19,7 @@ $ python3 contracts.py --providers Providers.csv --purchase Purchase_Process.csv
 
 In this section, I will show some UML diagrams used for explaining to other people the sowftare elements for this excercise and also some sofwtare's behaviors. It is an excellent set of notation elements that help us to model business processes and linking them to our software.
 
-In this excercise, I used [Visual Paradigm](https://www.visual-paradigm.com/) Community Edition v16.1 as the tool for creating these diagrams.
+I used [Visual Paradigm](https://www.visual-paradigm.com/) Community Edition v16.1 as the tool for creating these diagrams.
 
 ### 1.1 Use Case Diagram
 
